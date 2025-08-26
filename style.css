@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Livvic";
+  src: url(./fonts/Livvic/Livvic-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url(./fonts/Livvic/Livvic-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+:root {
+  --primarygreen: #014e56;
+  --primarycoral: #f67e7e;
+  --primarywhite: #ffffff;
+  --secondaryblueRAP: #79c8c7;
+  --secondarybluePOL: #2c6269;
+  --secondarygreenJUN: #004047;
+  --secondarygreenSACR: #012f34;
+  --secondarygreenDARK: #002529;
+}
+h1.large {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+}
+h1.small {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 56px;
+}
+h2 {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+h3 {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+body.body1 {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+body.body2 {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
