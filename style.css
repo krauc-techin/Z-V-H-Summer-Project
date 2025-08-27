@@ -58,7 +58,6 @@ body.body2 {
   font-size: 15px;
   line-height: 25px;
 }
-<<<<<<< HEAD
 @media (max-width: 767px) {
   .backgr-img {
     position: absolute;
@@ -100,7 +99,7 @@ body.body2 {
     background-color: var(--primarycoral);
     margin: 0 auto 1rem auto;
   }
-=======
+}
 
 /* Buttons */
 
@@ -192,7 +191,6 @@ body.body2 {
   width: 153px;
   height: 48px;
   font-size: large;
->>>>>>> ae7a265052a5d0261913a02453a6e59892b546ed
 }
 
 /* Mobile */
