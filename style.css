@@ -148,3 +148,30 @@ body.body2 {
   height: 48px;
   font-size: large;
 }
+
+/* mobile-footer */
+.mobile-footer-container {
+  background-color: var(--primarygreen);
+  color: var(--primarywhite);
+  text-align: center;
+  width: 375px;
+  height: 432px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.mobile-footer-link {
+  color: #ffffff;
+  /*color: var(--primarywhite);*/
+  text-decoration: none;
+}
+
+.mobile-footer-icons {
+  color: var(--primarywhite);
+  word-spacing: 20px;
+  text-decoration: none;
+}
+
+.mobile-footer-grey-text {
+  color: lightgray;
+}
