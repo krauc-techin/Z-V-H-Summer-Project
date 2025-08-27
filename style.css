@@ -44,7 +44,9 @@ h3 {
   font-size: 18px;
   line-height: 28px;
 }
-body.body1 {
+body.body1,
+a,
+button {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -56,11 +58,52 @@ body.body2 {
   font-size: 15px;
   line-height: 25px;
 }
+@media (max-width: 767px) {
+  .backgr-img {
+    position: absolute;
+    top: 0;
+    left: 275px;
+    width: 200px;
+    height: 244px;
+  }
+  article.build {
+    background-color: var(--secondarygreenSACR);
+    text-align: center;
+    position: relative;
+  }
+  article.build h2 {
+    color: white;
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .home-body {
+    max-height: 327px;
+    margin: 2.5rem auto;
+  }
+  .home-body img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 1rem;
+  }
+  .home-body h3 {
+    color: var(--primarycoral);
+    margin-bottom: 0.5;
+  }
+  .home-body p {
+    color: white;
+  }
+  .home-line {
+    width: 50px;
+    height: 4px;
+    border: var(--primarycoral);
+    background-color: var(--primarycoral);
+    margin: 0 auto 1rem auto;
+  }
 
 /* Buttons */
 
 .primary-light {
-  background-color: rgb(0, 37, 41);
+  background-color: transparent;
   border: 2px solid white;
   border-radius: 30px;
   color: white;
@@ -147,6 +190,86 @@ body.body2 {
   width: 153px;
   height: 48px;
   font-size: large;
+}
+
+/* Mobile */
+
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+
+header {
+  background-color: var(--primarygreen);
+  padding: 48px 24px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  align-self: center;
+}
+
+.hamburger {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menuIcon,
+.closeIcon {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateX(100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: var(--secondarybluePOL);
+  list-style: none;
+  padding: 4rem 3rem;
+}
+
+.showMenu {
+  transform: translateX(35%);
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-circle {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
 }
 
 /* mobile-footer */
