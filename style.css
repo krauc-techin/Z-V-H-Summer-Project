@@ -58,6 +58,49 @@ body.body2 {
   font-size: 15px;
   line-height: 25px;
 }
+<<<<<<< HEAD
+@media (max-width: 767px) {
+  .backgr-img {
+    position: absolute;
+    top: 0;
+    left: 275px;
+    width: 200px;
+    height: 244px;
+  }
+  article.build {
+    background-color: var(--secondarygreenSACR);
+    text-align: center;
+    position: relative;
+  }
+  article.build h2 {
+    color: white;
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .home-body {
+    max-height: 327px;
+    margin: 2.5rem auto;
+  }
+  .home-body img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 1rem;
+  }
+  .home-body h3 {
+    color: var(--primarycoral);
+    margin-bottom: 0.5;
+  }
+  .home-body p {
+    color: white;
+  }
+  .home-line {
+    width: 50px;
+    height: 4px;
+    border: var(--primarycoral);
+    background-color: var(--primarycoral);
+    margin: 0 auto 1rem auto;
+  }
+=======
 
 /* Buttons */
 
@@ -149,6 +192,7 @@ body.body2 {
   width: 153px;
   height: 48px;
   font-size: large;
+>>>>>>> ae7a265052a5d0261913a02453a6e59892b546ed
 }
 
 /* Mobile */
