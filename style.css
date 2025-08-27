@@ -56,6 +56,7 @@ body.body2 {
   font-size: 15px;
   line-height: 25px;
 }
+<<<<<<< HEAD
 @media (max-width: 767px) {
   .backgr-img {
     position: absolute;
@@ -97,4 +98,97 @@ body.body2 {
     background-color: var(--primarycoral);
     margin: 0 auto 1rem auto;
   }
+=======
+
+/* Buttons */
+
+.primary-light {
+  background-color: rgb(0, 37, 41);
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.primary-light:hover {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: rgb(0, 37, 41);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.primary-light:disabled {
+  background-color: rgb(0, 37, 41);
+  border: 2px solid rgb(44, 98, 105, 50%);
+  border-radius: 30px;
+  color: rgb(44, 98, 105, 50%);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.primary-dark {
+  background-color: white;
+  border: 2px solid rgb(0, 37, 41);
+  border-radius: 30px;
+  color: rgb(0, 37, 41);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.primary-dark:hover {
+  background-color: rgb(0, 37, 41);
+  border: 2px solid rgb(0, 37, 41);
+  border-radius: 30px;
+  color: white;
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.primary-dark:disabled {
+  background-color: white;
+  border: 2px solid rgb(44, 98, 105, 50%);
+  border-radius: 30px;
+  color: rgb(44, 98, 105, 50%);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.secondary-light {
+  background-color: white;
+  border-style: none;
+  border-radius: 30px;
+  color: rgb(0, 37, 41);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.secondary-light:hover {
+  background-color: rgb(121, 200, 199);
+  border-style: none;
+  border-radius: 30px;
+  color: rgb(0, 37, 41);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+}
+
+.secondary-light:disabled {
+  background-color: rgb(44, 98, 105, 50%);
+  border-style: none;
+  border-radius: 30px;
+  color: rgb(0, 37, 41);
+  width: 153px;
+  height: 48px;
+  font-size: large;
+>>>>>>> ae7a265052a5d0261913a02453a6e59892b546ed
 }
