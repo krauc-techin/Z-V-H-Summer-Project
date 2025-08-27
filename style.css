@@ -58,13 +58,15 @@ body.body2 {
   font-size: 15px;
   line-height: 25px;
 }
+/*Article 1 */
 @media (max-width: 767px) {
   .backgr-img {
     position: absolute;
     top: 0;
-    left: 275px;
+    right: 0;
     width: 200px;
     height: 244px;
+    overflow: hidden;
   }
   article.build {
     background-color: var(--secondarygreenSACR);
@@ -74,7 +76,8 @@ body.body2 {
   article.build h2 {
     color: white;
     text-align: left;
-    margin: 2rem 0;
+    margin: 2rem 2rem;
+    padding-right: 12rem;
   }
   .home-body {
     max-height: 327px;
@@ -97,7 +100,9 @@ body.body2 {
     height: 4px;
     border: var(--primarycoral);
     background-color: var(--primarycoral);
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem 5rem;
+    position: relative;
+    top: 2rem;
   }
 }
 
