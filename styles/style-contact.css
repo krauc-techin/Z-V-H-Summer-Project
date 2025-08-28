@@ -336,3 +336,35 @@ a {
 .form-group.has-error .form-help {
   color: var(--form-line-error);
 }
+/*ZVH-27*/
+@media (max-width: 767px) {
+  article {
+    position: relative;
+    background-color: var(--primarygreen);
+    padding: 20px;
+  }
+  h1.large {
+    text-align: center;
+    color: var(--primarywhite);
+  }
+  article h2 {
+    color: var(--primarycoral);
+    text-align: center;
+  }
+  h3 {
+    color: var(--primarywhite);
+  }
+  .person,
+  .cog,
+  .chart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .icon {
+    left: 0;
+    flex-shrink: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
