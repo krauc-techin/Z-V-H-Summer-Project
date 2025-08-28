@@ -58,10 +58,7 @@ body.body2 {
   font-size: 15px;
   line-height: 25px;
 }
-<<<<<<< HEAD
-=======
 /*Article 1 */
->>>>>>> main
 @media (max-width: 767px) {
   .backgr-img {
     position: absolute;
@@ -84,7 +81,9 @@ body.body2 {
   }
   .home-body {
     max-height: 327px;
-    margin: 2.5rem auto;
+    /*line below produce white space between article and footer */
+    margin: auto;
+    padding: 2.5rem;
   }
   .home-body img {
     width: 72px;
@@ -107,10 +106,7 @@ body.body2 {
     position: relative;
     top: 2rem;
   }
-<<<<<<< HEAD
-=======
 }
->>>>>>> main
 
 /* Buttons */
 
@@ -284,13 +280,40 @@ a {
   bottom: 0;
 }
 
+.home-body {
+  background-color: var(--secondarygreenSACR);
+}
+
+/* mobile-ready-get-started */
+.mobile-ready-started-container {
+  background-color: var(--primarycoral);
+  color: var(--secondarygreenSACR);
+  height: 260px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.mobile-ready-start-button {
+  background-color: var(--primarycoral);
+  border: solid 1px var(--secondarygreenSACR);
+}
+
+.mobile-ready-start-backgr-img {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
 /* mobile-footer */
 .mobile-footer-container {
-  background-color: var(--primarygreen);
+  background-color: var(--secondarygreenSACR);
   color: var(--primarywhite);
   text-align: center;
-  width: 375px;
-  height: 432px;
+  /*width: 375px;
+  height: 432px;*/
   padding-top: 30px;
   padding-bottom: 20px;
 }
@@ -309,6 +332,8 @@ a {
 
 .mobile-footer-grey-text {
   color: lightgray;
+}
+
 /* ===== ZVH-19: Form Elements ===== */
 
 :root {
