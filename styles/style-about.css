@@ -1,5 +1,5 @@
 article {
-    padding: 48px 24px;
+  padding: 48px 24px;
 }
 
 .about {
@@ -10,29 +10,29 @@ article {
 }
 
 .about-p {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .directors {
-    background-color: var(--secondarygreenJUN);
-    color: white;
-    text-align: center;
+  background-color: var(--secondarygreenJUN);
+  color: white;
+  text-align: center;
 }
 
 .director-container {
-    background-color: var(--secondarygreenSACR);
+  background-color: var(--secondarygreenSACR);
 }
 
 .clients {
-    background-color: var(--secondarygreenSACR);
-    color: white;
-    text-align: center;
+  background-color: var(--secondarygreenSACR);
+  color: white;
+  text-align: center;
 }
 
 img {
-    width: 40%;
+  width: 40%;
 }
 
 .client-logo {
-    margin: 2rem;
+  margin: 2rem;
 }
