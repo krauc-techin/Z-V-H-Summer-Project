@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Team</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
     />
 
     <script defer src="script.js"></script>
@@ -17,14 +22,14 @@
       <h2 class="header-container">myteam</h2>
       <ul class="menu">
         <li>
-          <a class="menuItem body1" href="index.html">home</a>
+          <a class="menu-item body1" href="index.html">home</a>
         </li>
         <li>
-          <a class="menuItem" href="about.html">about</a>
+          <a class="menu-item" href="about.html">about</a>
         </li>
         <li>
           <a href="contact.html">
-            <button class="primary-light menuItem">contact us</button></a
+            <button class="primary-light menu-item">contact us</button></a
           >
         </li>
         <li>
@@ -38,12 +43,12 @@
       <nav class="header-container">
         <button class="hamburger">
           <img
-            class="menuIcon"
+            class="menu-icon"
             src="images/icon-hamburger.svg"
             alt="hamburger menu icon"
           />
           <img
-            class="closeIcon"
+            class="close-icon"
             src="images/icon-close.svg"
             alt="menu close icon"
           />
@@ -89,13 +94,16 @@
       <div class="mobile-ready-started-container">
         <h2>Ready to get started?</h2>
         <br />
-        <button
-          class="secondary-light mobile-ready-start-button"
-          type="button"
-          alt="contact button"
-        >
-          contact
-        </button>
+
+        <a href="contact.html" target="_blank">
+          <button
+            class="secondary-light mobile-ready-start-button"
+            type="button"
+            alt="contact button"
+          >
+            contact
+          </button>
+        </a>
         <p>
           <img
             src="./images/bg-pattern-home-6-about-5.svg"
@@ -109,14 +117,15 @@
       class="background-color: var(—primarygeeen) mobile-footer-container"
     >
       <div>
+        <br />
         <h3>myteam</h3>
         <!--TEKSTO SRIFTAI NEVEIKIA-->
         <p style="word-spacing: 20px" class="body1">
+          <br />
           <a class="mobile-footer-link body1" href="index.html">home</a>
-          <a class="mobile-footer-link body1" href="https://www.w3schools.com"
-            >about</a
-          >
+          <a class="mobile-footer-link body1" href="about.html">about</a>
         </p>
+        <br />
       </div>
       <div class="body1 mobile-footer-grey-text">
         <p>987 Hillcrest Lane</p>
@@ -156,6 +165,7 @@
       <p class="body2 mobile-footer-grey-text">
         Copyright 2020. All Rights Reserved
       </p>
+      <br />
     </footer>
   </body>
 </html>
