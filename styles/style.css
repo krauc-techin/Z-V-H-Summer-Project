@@ -81,7 +81,10 @@ button {
   }
   .home-body {
     max-height: 327px;
-    margin: 2.5rem auto;
+    /* margin: 2.5rem create white space between next article */
+    /* was changed to pading */
+    margin: auto;
+    padding: 2.5rem;
   }
   .home-body img {
     width: 72px;
@@ -276,6 +279,57 @@ a {
   position: absolute;
   left: 40%;
   bottom: 0;
+}
+
+/* mobile-ready-get-started */
+.mobile-ready-started-container {
+  background-color: var(--primarycoral);
+  color: var(--secondarygreenSACR);
+  height: 260px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.mobile-ready-start-button {
+  background-color: var(--primarycoral);
+  border: solid 1px var(--secondarygreenSACR);
+}
+
+.mobile-ready-start-backgr-img {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* mobile-footer */
+.mobile-footer-container {
+  background-color: var(--secondarygreenSACR);
+  color: var(--primarywhite);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.mobile-footer-link {
+  color: var(--primarywhite);
+  text-decoration: none;
+}
+
+.mobile-footer-icons {
+  color: var(--primarywhite);
+  word-spacing: 20px;
+  text-decoration: none;
+}
+
+.mobile-footer-icons:hover {
+  color: rgb(121, 200, 199);
+}
+
+.mobile-footer-grey-text {
+  color: lightgray;
 }
 
 /* ===== ZVH-19: Form Elements ===== */
