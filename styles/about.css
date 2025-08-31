@@ -1,13 +1,22 @@
 article {
+<<<<<<< HEAD
   padding: 3rem 1.5rem;
+=======
+  padding: 48px 24px;
+>>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
 }
 
 .about {
   background-color: var(--primarygreen);
   text-align: center;
+<<<<<<< HEAD
   position: relative;
   color: white;
   padding-bottom: 4rem;
+=======
+  color: white;
+  padding-bottom: 8rem;
+>>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
 }
 
 .about-p {
@@ -16,11 +25,16 @@ article {
 
 .directors {
   background-color: var(--secondarygreenJUN);
+<<<<<<< HEAD
   position: relative;
   color: white;
   text-align: center;
   z-index: 1;
   padding-bottom: 6.25rem;
+=======
+  color: white;
+  text-align: center;
+>>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
 }
 
 .director-container {
@@ -40,6 +54,7 @@ img {
 .client-logo {
   margin: 2rem;
 }
+<<<<<<< HEAD
 
 .about-pattern {
   position: absolute;
@@ -62,3 +77,5 @@ img {
   position: absolute;
   left: -5rem;
 }
+=======
+>>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965

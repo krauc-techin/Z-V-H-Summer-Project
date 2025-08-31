@@ -237,10 +237,11 @@ a {
 .mobile-ready-started-container {
   background-color: var(--primarycoral);
   color: var(--secondarygreenSACR);
-  height: 260px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  padding-left: 48px;
+  padding-right: 48px;
   position: relative;
 }
 
