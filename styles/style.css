@@ -45,8 +45,8 @@ h1.small {
 h2 {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 h3 {
   font-family: "Livvic", sans-serif;
@@ -167,7 +167,7 @@ button {
 
 header {
   background-color: var(--primarygreen);
-  padding: 48px 24px;
+  padding: 3rem 1.5rem;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -179,8 +179,8 @@ nav {
 
 .hamburger {
   position: relative;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   padding: 0;
   border: none;
   background: transparent;
