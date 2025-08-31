@@ -1,0 +1,64 @@
+article {
+  padding: 3rem 1.5rem;
+}
+
+.about {
+  background-color: var(--primarygreen);
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.about-p {
+  margin-top: 1rem;
+}
+
+.directors {
+  background-color: var(--secondarygreenJUN);
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 6.25rem;
+}
+
+.director-container {
+  background-color: var(--secondarygreenSACR);
+}
+
+.clients {
+  background-color: var(--secondarygreenSACR);
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 40%;
+}
+
+.client-logo {
+  margin: 2rem;
+}
+
+.about-pattern {
+  position: absolute;
+  right: -5rem;
+}
+
+.director-pattern-circle {
+  position: absolute;
+  left: -5rem;
+  bottom: 6.25rem;
+  z-index: 2;
+}
+
+.director-pattern-square {
+  position: absolute;
+  right: 0;
+}
+
+.clients-pattern {
+  position: absolute;
+  left: -5rem;
+}

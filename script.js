@@ -1,10 +1,10 @@
 "use strict";
 
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
+const menuItems = document.querySelectorAll(".menu-item");
 const hamburger = document.querySelector(".hamburger");
-const closeIcon = document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
+const closeIcon = document.querySelector(".close-icon");
+const menuIcon = document.querySelector(".menu-icon");
 
 function toggleMenu() {
   if (menu.classList.contains("show-menu")) {
@@ -17,8 +17,8 @@ function toggleMenu() {
     menuIcon.style.display = "none";
   }
 
-  console.log("closeIcon:", closeIcon);
-  console.log("menuIcon:", menuIcon);
+  console.log("close-icon:", closeIcon);
+  console.log("menu-icon:", menuIcon);
 }
 
 hamburger.addEventListener("click", toggleMenu);
