@@ -1,22 +1,13 @@
 article {
-<<<<<<< HEAD
   padding: 3rem 1.5rem;
-=======
-  padding: 48px 24px;
->>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
 }
 
 .about {
   background-color: var(--primarygreen);
   text-align: center;
-<<<<<<< HEAD
   position: relative;
   color: white;
   padding-bottom: 4rem;
-=======
-  color: white;
-  padding-bottom: 8rem;
->>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
 }
 
 .about-p {
@@ -25,36 +16,34 @@ article {
 
 .directors {
   background-color: var(--secondarygreenJUN);
-<<<<<<< HEAD
   position: relative;
   color: white;
   text-align: center;
   z-index: 1;
-  padding-bottom: 6.25rem;
-=======
-  color: white;
-  text-align: center;
->>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
+  padding-bottom: 9rem;
+  padding-top: 5rem;
 }
 
-.director-container {
+.card__face {
   background-color: var(--secondarygreenSACR);
+  padding: 2rem 2rem 1rem 2rem;
+  margin-top: 2rem;
 }
 
 .clients {
   background-color: var(--secondarygreenSACR);
   color: white;
   text-align: center;
+  padding-top: 4rem;
 }
 
-img {
+article img {
   width: 40%;
 }
 
 .client-logo {
   margin: 2rem;
 }
-<<<<<<< HEAD
 
 .about-pattern {
   position: absolute;
@@ -64,18 +53,104 @@ img {
 .director-pattern-circle {
   position: absolute;
   left: -5rem;
-  bottom: 6.25rem;
+  bottom: 8rem;
   z-index: 2;
+  width: 40%;
 }
 
 .director-pattern-square {
   position: absolute;
   right: 0;
+  bottom: 0;
 }
 
 .clients-pattern {
   position: absolute;
   left: -5rem;
 }
-=======
->>>>>>> 4238938ccb13832c7ec25a3963a912c39b98f965
+
+.card__face > h3 {
+  color: var(--secondaryblueRAP);
+}
+
+.director-picture {
+  border-radius: 50%;
+  border: 3px solid var(--secondaryblueRAP);
+}
+
+.director-container-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  bottom: -2.5rem;
+  background-color: var(--primarycoral);
+}
+
+.director-container-close-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  bottom: -2.5rem;
+  background-color: var(--secondaryblueRAP);
+  transform: rotate(45deg);
+}
+
+.director-container-button:hover {
+  background-color: var(--secondaryblueRAP);
+}
+
+.director-container-close-button:hover {
+  background-color: var(--primarycoral);
+}
+
+.card-back-icon {
+  padding: 0.5rem;
+}
+
+.card-back-p {
+  padding-bottom: 1rem;
+}
+.container-open-image {
+  width: 30%;
+}
+
+.director-title {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.scene {
+  display: inline-block;
+  width: 100%;
+  height: 37.5vh;
+  margin-top: 3rem;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: 1s;
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
