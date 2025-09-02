@@ -56,13 +56,26 @@
   overflow: hidden;
   background: var(--primarygreen);
   color: var(--primarywhite);
-  padding: 4.5rem 1.5rem 6.25rem;
+  padding-top: 4.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 6.25rem;
+  text-align: center;
+}
+
+.find-talent-text {
+  display: flex;
+  justify-content: center;
 }
 
 .find-talent__inner {
   max-width: 36rem;
   margin: 0 auto;
   text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .find-talent__title {
@@ -85,9 +98,14 @@
   opacity: 0.9;
 }
 
+.find-talent__bg-div {
+  display: flex;
+  justify-content: center;
+}
+
 .find-talent__bg {
   position: absolute;
-  left: -1.25rem;
+  /*left: -1.25rem;*/
   bottom: -1rem;
   width: 18.5rem;
   height: auto;
@@ -100,23 +118,34 @@
 @media (min-width: 768px) {
   .find-talent {
     padding: 6rem 2rem 8rem;
+    text-align: center;
   }
   .find-talent__inner {
     max-width: 60rem;
-    text-align: left;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: center;
   }
   .find-talent__title {
-    font-size: 3rem; /* ~48px */
-    max-width: 24ch;
+    font-size: 3rem;
+    /*max-width: 24ch;*/
   }
   .find-talent__lead {
     max-width: 45ch;
     margin: 1rem 0 0;
   }
+
   .find-talent__bg {
-    left: -2rem;
+    /* works without this class*/
+    /*left: -2rem;
     bottom: -1.25rem;
     width: 24rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;*/
   }
 }
 
