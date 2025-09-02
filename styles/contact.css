@@ -121,6 +121,7 @@
     position: relative;
     background-color: var(--primarygreen);
     padding: 2rem;
+    z-index: 1;
   }
   h1.large {
     text-align: center;
@@ -153,4 +154,17 @@
   button {
     margin-top: 1rem;
   }
+  .bg-image {
+    position: absolute;
+    left: 90%;
+    top: 80%;
+    width: 200px;
+    height: 225px;
+    overflow: hidden;
+    z-index: 0;
+  }
+}
+footer {
+  z-index: 2;
+  position: relative;
 }
