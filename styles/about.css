@@ -58,9 +58,10 @@ article {
 }
 
 .about-pattern {
-  position: relative;
+  position: absolute;
   right: -5rem;
   bottom: -5rem;
+  overflow: hidden;
 }
 
 .director-pattern-circle {
@@ -180,6 +181,28 @@ article {
 /* Tablet */
 
 @media only screen and (min-width: 768px) {
+  /* About */
+
+  .about {
+    padding-bottom: 7rem;
+  }
+
+  .about-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about-pattern {
+    position: absolute;
+    right: -6.5rem;
+    bottom: 0;
+  }
+
   /* Meet the directors */
 
   .director {
@@ -193,6 +216,7 @@ article {
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0 auto;
     column-gap: 0.5rem;
+    row-gap: 2rem;
   }
 
   .scene {
@@ -215,6 +239,27 @@ article {
   }
 
   .director-pattern-circle {
-    bottom: 20.6rem;
+    bottom: 26.3rem;
+  }
+
+  /* Come of our clients */
+
+  .clients {
+    padding-top: 6rem;
+  }
+  .clients-flex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .client-logo {
+    flex-wrap: wrap;
+    max-width: 4rem;
+    height: 10%;
+  }
+
+  .clients-pattern {
+    left: 0;
   }
 }
