@@ -8,6 +8,7 @@ article {
   position: relative;
   color: white;
   padding-bottom: 4rem;
+  z-index: 1;
 }
 
 .about-p {
@@ -35,6 +36,8 @@ article {
   color: white;
   text-align: center;
   padding-top: 4rem;
+  position: relative;
+  z-index: 4;
 }
 
 .pattern {
@@ -58,16 +61,18 @@ article {
 }
 
 .about-pattern {
-  position: relative;
+  position: absolute;
   right: -5rem;
   bottom: -5rem;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .director-pattern-circle {
   position: absolute;
   left: -5rem;
-  bottom: 9.5rem;
-  z-index: 2;
+  bottom: 35%;
+  z-index: -1;
   width: 40%;
 }
 
@@ -75,11 +80,14 @@ article {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .clients-pattern {
   position: absolute;
   left: -5rem;
+  top: -5rem;
+  z-index: 3;
 }
 
 .card__face > h3 {
@@ -180,6 +188,28 @@ article {
 /* Tablet */
 
 @media only screen and (min-width: 768px) {
+  /* About */
+
+  .about {
+    padding-bottom: 7rem;
+  }
+
+  .about-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about-pattern {
+    position: absolute;
+    right: -6.5rem;
+    bottom: 0;
+  }
+
   /* Meet the directors */
 
   .director {
@@ -193,6 +223,7 @@ article {
     grid-template-rows: 1fr 1fr 1fr;
     margin: 0 auto;
     column-gap: 0.5rem;
+    row-gap: 2rem;
   }
 
   .scene {
@@ -215,6 +246,58 @@ article {
   }
 
   .director-pattern-circle {
-    bottom: 20.6rem;
+    bottom: 24.3rem;
+  }
+
+  /* Some of our clients */
+
+  .clients {
+    padding-top: 6rem;
+  }
+  .clients-flex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .client-logo {
+    flex-wrap: wrap;
+    max-width: 4rem;
+    height: 10%;
+  }
+
+  .clients-pattern {
+    left: 0;
+    width: 25%;
+    top: -6rem;
+  }
+
+  .logo-small {
+    max-width: 6rem;
+  }
+
+  /* Ready to get started */
+
+  .get-started-grid-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mobile-ready-started-container {
+    position: relative;
+    padding-bottom: 4rem;
+    z-index: 0;
+  }
+
+  .mobile-ready-start-backgr-img {
+    bottom: -1rem;
+    width: 20%;
+    z-index: 1;
+  }
+
+  footer {
+    position: relative;
+    z-index: 2;
   }
 }
