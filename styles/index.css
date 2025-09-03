@@ -1,53 +1,47 @@
 /*Article 1 */
-@media (max-width: 767px) {
-  .backgr-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 244px;
-    overflow: hidden;
-  }
-  article.build {
-    background-color: var(--secondarygreenSACR);
-    text-align: center;
-    position: relative;
-  }
-  article.build h2 {
-    color: white;
-    text-align: left;
-    margin: 2rem 2rem;
-    padding-right: 12rem;
-  }
-  .home-body {
-    max-height: 327px;
-
-    /* margin: 2.5rem create white space between next article */
-    /* was changed to pading */
-    margin: auto;
-    padding: 2.5rem;
-  }
-  .home-body img {
-    width: 72px;
-    height: 72px;
-    margin-bottom: 1rem;
-  }
-  .home-body h3 {
-    color: var(--primarycoral);
-    margin-bottom: 0.5;
-  }
-  .home-body p {
-    color: white;
-  }
-  .home-line {
-    width: 50px;
-    height: 4px;
-    border: var(--primarycoral);
-    background-color: var(--primarycoral);
-    margin: 0 auto 1rem 5rem;
-    position: relative;
-    top: 2rem;
-  }
+.backgr-img {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 200px;
+  height: 244px;
+  overflow: hidden;
+}
+article.build {
+  background-color: var(--secondarygreenSACR);
+  text-align: center;
+  position: relative;
+}
+article.build h2 {
+  color: white;
+  text-align: left;
+  margin: 2rem 2rem;
+  padding-right: 12rem;
+}
+.home-body {
+  margin: auto;
+  padding: 2.5rem;
+}
+.home-body img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+.home-body h3 {
+  color: var(--primarycoral);
+  margin-bottom: 0.5;
+}
+.home-body p {
+  color: white;
+}
+.home-line {
+  width: 50px;
+  height: 4px;
+  border: var(--primarycoral);
+  background-color: var(--primarycoral);
+  position: absolute;
+  top: 2rem;
+  margin-left: 2rem;
 }
 
 /* ZVH-20: Find the best talent (hero) */
