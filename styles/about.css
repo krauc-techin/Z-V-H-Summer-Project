@@ -8,6 +8,7 @@ article {
   position: relative;
   color: white;
   padding-bottom: 4rem;
+  z-index: 1;
 }
 
 .about-p {
@@ -35,6 +36,8 @@ article {
   color: white;
   text-align: center;
   padding-top: 4rem;
+  position: relative;
+  z-index: 4;
 }
 
 .pattern {
@@ -62,13 +65,14 @@ article {
   right: -5rem;
   bottom: -5rem;
   overflow: hidden;
+  z-index: -1;
 }
 
 .director-pattern-circle {
   position: absolute;
   left: -5rem;
-  bottom: 9.5rem;
-  z-index: 2;
+  bottom: 35%;
+  z-index: -1;
   width: 40%;
 }
 
@@ -76,11 +80,14 @@ article {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .clients-pattern {
   position: absolute;
   left: -5rem;
+  top: -5rem;
+  z-index: 3;
 }
 
 .card__face > h3 {
@@ -262,6 +269,7 @@ article {
   .clients-pattern {
     left: 0;
     width: 25%;
+    top: -6rem;
   }
 
   .logo-small {
