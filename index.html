@@ -31,7 +31,34 @@
   </head>
   <body>
     <header>
-      <h2 class="header-container">myteam</h2>
+      <!-- <h2 class="header-container">myteam</h2> -->
+      <!--class="header-container" NIEKUR NEAPRASYTA -->
+
+      <div class="header-menu-horizontal-tablet">
+        <div class="heater-container-tablet header-menu-left">
+          <h2>myteam</h2>
+          <div class="header-menu-tablet">
+            <p class="hide-item-mobie">
+              <br />
+              <a
+                class="mobile-footer-link"
+                href="index.html"
+                >home</a
+              >
+              <a
+                class="mobile-footer-link"
+                href="about.html"
+                >about</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="header-menu-right hide-item-mobie">
+          <button class="primary-light menu-item">contact us</button>
+        </div>
+      </div>
+
+      <!-- animated menu -->
       <ul class="menu">
         <li>
           <a
@@ -62,11 +89,13 @@
       </ul>
       <nav class="header-container">
         <button class="hamburger">
-          <img
-            class="menu-icon"
-            src="images/icon-hamburger.svg"
-            alt="hamburger menu icon"
-          />
+          <div class="hide-item-tablet">
+            <img
+              class="menu-icon hide-item-tablet"
+              src="images/icon-hamburger.svg"
+              alt="hamburger menu icon"
+            />
+          </div>
           <img
             class="close-icon"
             src="images/icon-close.svg"
@@ -186,7 +215,6 @@
       <div>
         <br />
         <h3>myteam</h3>
-        <!--TEKSTO SRIFTAI NEVEIKIA-->
         <p
           style="word-spacing: 20px"
           class="body-large"
