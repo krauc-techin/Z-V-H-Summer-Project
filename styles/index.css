@@ -1,5 +1,9 @@
 /*Article 1 */
 @media (max-width: 767px) {
+  .header-menu-hide {
+    display: none;
+  }
+
   .backgr-img {
     position: absolute;
     top: 0;
@@ -117,26 +121,41 @@
 
 /* ===== Tablet ===== */
 @media (min-width: 768px) {
-  /*.menu {
-    position: fixed;
-    transform: translateX(100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    background: var(--secondarybluePOL);
-    list-style: none;
-    padding: 4rem 3rem;
-  }*/
+  .heater-container-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 2rem;
+    word-spacing: 3rem;
+  }
+
+  .header-menu-left {
+    float: left;
+  }
+
+  .header-menu-right {
+    float: right;
+  }
+  /* style="clear: both;" */
+
+  .header-menu-tablet {
+    justify-content: space-between;
+  }
+
+  .header-menu-horizontal-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* color: red; */
+  }
 
   .find-talent {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-right: 1rem;
     line-height: 0.5;
-
     /* padding: 6rem 2rem 8rem; */
     text-align: center;
     display: flex;
