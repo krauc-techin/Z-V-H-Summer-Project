@@ -1,6 +1,7 @@
 /*Article 1 */
+/* Mobile */
 @media (max-width: 767px) {
-  .header-menu-hide {
+  .hide-item-mobie {
     display: none;
   }
 
@@ -121,6 +122,9 @@
 
 /* ===== Tablet ===== */
 @media (min-width: 768px) {
+  .hide-item-tablet {
+    display: none;
+  }
   .heater-container-tablet {
     display: flex;
     justify-content: space-between;
