@@ -177,3 +177,118 @@
     width: 28rem;
   }
 }
+
+/* ZVH-22: Delivering real results — MOBILE (375px) */
+html,
+body {
+  overflow-x: hidden;
+}
+
+.delivering-results {
+  background: var(--secondarygreenJUN);
+  color: var(--primarywhite);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 3.25rem 1.5rem 4.75rem;
+}
+
+.results-inner {
+  max-width: 22rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.results-title {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  max-width: 20ch;
+  margin: 0 auto 1.25rem;
+}
+
+.results-quotes {
+  width: 26px;
+  height: auto;
+  margin: 0.25rem auto 0.75rem;
+  opacity: 0.9;
+}
+
+.results-quote {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  max-width: 30ch;
+  margin: 0 auto 0.85rem;
+  opacity: 0.95;
+}
+
+.results-name {
+  color: var(--primarycoral);
+  font-weight: 700;
+  margin: 0.7rem 0 0.25rem;
+}
+
+.results-role {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 0.6rem;
+}
+
+.results-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--secondaryblueRAP);
+  object-fit: cover;
+  display: block;
+  margin: 0.35rem auto 1.6rem;
+}
+
+.results-bg-top {
+  position: absolute;
+  top: -18px;
+  left: -10px;
+  width: 120px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.results-bg-bottom {
+  position: absolute;
+  bottom: -28px;
+  right: 0;
+  width: 180p;
+}
+.results-item {
+  position: relative;
+  padding-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.results-item .results-quotes {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: auto;
+  opacity: 0.22;
+  pointer-events: none;
+  user-select: none;
+  margin: 0;
+}
+.results-bg-top {
+  top: -14px;
+  left: -8px;
+  width: 156px;
+}
+.results-bg-bottom {
+  right: -6px;
+  bottom: -30px;
+  width: 228px;
+}
