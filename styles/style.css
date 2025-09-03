@@ -54,7 +54,7 @@ h3 {
   font-size: 18px;
   line-height: 28px;
 }
-.body1,
+.body-large,
 a,
 button {
   font-family: "Livvic", sans-serif;
@@ -62,7 +62,7 @@ button {
   font-size: 18px;
   line-height: 28px;
 }
-.body2 {
+.body-small {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   font-size: 15px;

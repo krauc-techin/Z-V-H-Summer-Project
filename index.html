@@ -31,11 +31,38 @@
   </head>
   <body>
     <header>
-      <h2 class="header-container">myteam</h2>
+      <!-- <h2 class="header-container">myteam</h2> -->
+      <!--class="header-container" NIEKUR NEAPRASYTA -->
+
+      <div class="header-menu-horizontal-tablet">
+        <div class="heater-container-tablet header-menu-left">
+          <h2>myteam</h2>
+          <div class="header-menu-tablet">
+            <p class="hide-item-mobie">
+              <br />
+              <a
+                class="mobile-footer-link"
+                href="index.html"
+                >home</a
+              >
+              <a
+                class="mobile-footer-link"
+                href="about.html"
+                >about</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="header-menu-right hide-item-mobie">
+          <button class="primary-light menu-item">contact us</button>
+        </div>
+      </div>
+
+      <!-- animated menu -->
       <ul class="menu">
         <li>
           <a
-            class="menu-item body1"
+            class="menu-item body-large"
             href="index.html"
             >home</a
           >
@@ -62,11 +89,13 @@
       </ul>
       <nav class="header-container">
         <button class="hamburger">
-          <img
-            class="menu-icon"
-            src="images/icon-hamburger.svg"
-            alt="hamburger menu icon"
-          />
+          <div class="hide-item-tablet">
+            <img
+              class="menu-icon hide-item-tablet"
+              src="images/icon-hamburger.svg"
+              alt="hamburger menu icon"
+            />
+          </div>
           <img
             class="close-icon"
             src="images/icon-close.svg"
@@ -95,7 +124,7 @@
           best <span class="accent">talent</span>
         </h1>
         <div class="find-talent-text">
-          <p class="find-talent-lead body2">
+          <p class="find-talent-lead body-small">
             Finding the right people and building high performing teams can be
             hard. Most companies aren’t tapping into the abundance of global
             talent. We’re about to change that.
@@ -128,7 +157,7 @@
           alt="icon-person"
         />
         <h3>Experienced Individuals</h3>
-        <p class="body2">
+        <p class="body-small">
           Our network is made up highly experienced professionals who are
           passionate about what they do.
         </p>
@@ -139,7 +168,7 @@
           alt="icon-cog"
         />
         <h3>Easy to Implement</h3>
-        <p class="body2">
+        <p class="body-small">
           Our processes have been refined over years of implementation meaning
           our teams always deliver.
         </p>
@@ -150,7 +179,7 @@
           alt="icon-chart"
         />
         <h3>Enchanced Productivity</h3>
-        <p class="body2">
+        <p class="body-small">
           Our customized platform with in-built analytics helps you manage your
           distributed teams.
         </p>
@@ -188,26 +217,25 @@
       <div>
         <br />
         <h3>myteam</h3>
-        <!--TEKSTO SRIFTAI NEVEIKIA-->
         <p
           style="word-spacing: 20px"
-          class="body1"
+          class="body-large"
         >
           <br />
           <a
-            class="mobile-footer-link body1"
+            class="mobile-footer-link body-large"
             href="index.html"
             >home</a
           >
           <a
-            class="mobile-footer-link body1"
+            class="mobile-footer-link body-large"
             href="about.html"
             >about</a
           >
         </p>
         <br />
       </div>
-      <div class="body1 mobile-footer-grey-text">
+      <div class="body-large mobile-footer-grey-text">
         <p>987 Hillcrest Lane</p>
         <p>Irvine, CA</p>
         <p>California 92714</p>
@@ -242,7 +270,7 @@
           </a>
         </p>
       </div>
-      <p class="body2 mobile-footer-grey-text">
+      <p class="body-small mobile-footer-grey-text">
         Copyright 2020. All Rights Reserved
       </p>
       <br />
