@@ -239,10 +239,10 @@ article {
   }
 
   .director-pattern-circle {
-    bottom: 26.3rem;
+    bottom: 24.3rem;
   }
 
-  /* Come of our clients */
+  /* Some of our clients */
 
   .clients {
     padding-top: 6rem;
@@ -261,5 +261,35 @@ article {
 
   .clients-pattern {
     left: 0;
+    width: 25%;
+  }
+
+  .logo-small {
+    max-width: 6rem;
+  }
+
+  /* Ready to get started */
+
+  .get-started-grid-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mobile-ready-started-container {
+    position: relative;
+    padding-bottom: 4rem;
+    z-index: 0;
+  }
+
+  .mobile-ready-start-backgr-img {
+    bottom: -1rem;
+    width: 20%;
+    z-index: 1;
+  }
+
+  footer {
+    position: relative;
+    z-index: 2;
   }
 }
