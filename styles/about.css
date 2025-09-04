@@ -327,4 +327,115 @@ article {
     margin-left: 25%;
     margin-bottom: 3rem;
   }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-line {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--primarycoral);
+    position: absolute;
+    left: 42%;
+  }
+
+  .about-p {
+    padding-top: 2rem;
+  }
+
+  .about-heading {
+    padding-top: 3rem;
+  }
+  /* Directors */
+
+  .directors {
+    padding-top: 7rem;
+  }
+
+  .director-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+
+  .card {
+    max-width: 40rem;
+  }
+
+  .director-container-button {
+    bottom: -2.3rem;
+  }
+
+  .director-container-close-button {
+    bottom: -3rem;
+  }
+
+  /* Clients */
+
+  .clients {
+  }
+  .clients-flex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .client-logo {
+    flex-wrap: wrap;
+    max-width: 4rem;
+    height: 10%;
+  }
+
+  .clients-pattern {
+    width: 10%;
+    top: -0;
+  }
+
+  .logo-small {
+    max-width: 10rem;
+  }
+
+  .logo-large {
+    max-width: 8rem;
+  }
+
+  .logo-largest {
+    max-width: 6rem;
+  }
+
+  /* Ready to get started */
+
+  .get-started-grid-container {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .mobile-ready-started-container {
+    position: relative;
+    padding-bottom: 4rem;
+    z-index: 0;
+  }
+
+  .mobile-ready-start-backgr-img {
+    bottom: -1rem;
+    width: 15%;
+    z-index: 1;
+  }
+
+  footer {
+    position: relative;
+    z-index: 2;
+  }
 }
