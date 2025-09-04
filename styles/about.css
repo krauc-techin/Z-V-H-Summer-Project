@@ -302,7 +302,10 @@ article {
   }
 }
 @media screen and (min-width: 1440px) {
+<<<<<<< HEAD
   
+=======
+>>>>>>> e64c3117b8a660bedd8426cd583768f72021543c
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
