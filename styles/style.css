@@ -284,6 +284,35 @@ a {
 .mobile-footer-grey-text {
   color: lightgray;
 }
+
+@media (max-width: 767px) {
+  .hide-item-mobie {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-item-tablet {
+    display: none;
+  }
+  .heater-container-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 2rem;
+    word-spacing: 3rem;
+  }
+
+  .header-menu-horizontal-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* color: red; */
+  }
+}
+
 @media screen and (min-width: 1440px) {
   footer {
     display: grid;
