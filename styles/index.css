@@ -30,8 +30,8 @@
 
     /* margin: 2.5rem create white space between next article */
     /* was changed to pading */
-    margin: auto;
-    padding: 2.5rem;
+    /*margin: auto;
+    padding: 2.5rem;*/
   }
   .home-body img {
     width: 72px;
@@ -289,18 +289,18 @@ article.build h2 {
     word-spacing: 3rem;
   }
 
-  .header-menu-left {
+  /*.header-menu-left {
     float: left;
   }
 
   .header-menu-right {
     float: right;
-  }
+  }*/
   /* style="clear: both;" */
 
-  .header-menu-tablet {
+  /*.header-menu-tablet {
     justify-content: space-between;
-  }
+  }*/
 
   .header-menu-horizontal-tablet {
     display: flex;
