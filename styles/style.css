@@ -314,19 +314,20 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
-  footer {
+  .desktop-footer {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     gap: 2rem;
   }
-  footer h3 {
+  .footer-logo {
     grid-column: 1;
   }
-  footer p {
+  .footer-nav {
     grid-column: 1;
   }
   .address {
     grid-column: 2;
+    text-align: left;
   }
   .footer-social {
     grid-column: 4;
