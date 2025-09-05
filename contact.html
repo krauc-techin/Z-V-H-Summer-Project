@@ -30,8 +30,36 @@
   </head>
   <body>
     <header>
-      <h2 class="header-container">myteam</h2>
-      <ul class="menu">
+      <!-- <h2 class="header-container">myteam</h2> -->
+
+      <div class="header-menu-horizontal-tablet">
+        <div class="heater-container-tablet header-menu-left">
+          <h2>myteam</h2>
+          <div class="header-menu-tablet">
+            <p class="hide-item-mobie">
+              <br />
+              <a
+                class="mobile-footer-link"
+                href="index.html"
+                >home</a
+              >
+              <a
+                class="mobile-footer-link"
+                href="about.html"
+                >about</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="hide-item-mobie">
+          <a href="contact.html">
+            <button class="primary-light menu-item">contact us</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- animated menu -->
+      <ul class="menu hide-item-tablet">
         <li>
           <a
             class="menu-item body-large"
@@ -59,7 +87,7 @@
           />
         </li>
       </ul>
-      <nav class="header-container">
+      <nav class="header-container hide-item-tablet">
         <button class="hamburger">
           <img
             class="menu-icon"
