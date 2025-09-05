@@ -29,268 +29,272 @@
     ></script>
   </head>
   <body>
-    <header>
-      <!-- <h2 class="header-container">myteam</h2> -->
+    <div class="contact-page">
+      <header>
+        <!-- <h2 class="header-container">myteam</h2> -->
 
-      <div class="header-menu-horizontal-tablet">
-        <div class="heater-container-tablet header-menu-left">
-          <h2>myteam</h2>
-          <div class="header-menu-tablet">
-            <p class="hide-item-mobie">
-              <br />
-              <a
-                class="mobile-footer-link"
-                href="index.html"
-                >home</a
-              >
-              <a
-                class="mobile-footer-link"
-                href="about.html"
-                >about</a
-              >
-            </p>
+        <div class="header-menu-horizontal-tablet">
+          <div class="heater-container-tablet header-menu-left">
+            <h2>myteam</h2>
+            <div class="header-menu-tablet">
+              <p class="hide-item-mobie">
+                <br />
+                <a
+                  class="mobile-footer-link"
+                  href="index.html"
+                  >home</a
+                >
+                <a
+                  class="mobile-footer-link"
+                  href="about.html"
+                  >about</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hide-item-mobie">
+            <a href="contact.html">
+              <button class="primary-light menu-item">contact us</button>
+            </a>
           </div>
         </div>
-        <div class="hide-item-mobie">
-          <a href="contact.html">
-            <button class="primary-light menu-item">contact us</button>
-          </a>
-        </div>
-      </div>
 
-      <!-- animated menu -->
-      <ul class="menu hide-item-tablet">
-        <li>
-          <a
-            class="menu-item body-large"
-            href="index.html"
-            >home</a
-          >
-        </li>
-        <li>
-          <a
-            class="menu-item"
-            href="about.html"
-            >about</a
-          >
-        </li>
-        <li>
-          <a href="contact.html">
-            <button class="primary-light menu-item">contact us</button></a
-          >
-        </li>
-        <li>
+        <!-- animated menu -->
+        <ul class="menu hide-item-tablet">
+          <li>
+            <a
+              class="menu-item body-large"
+              href="index.html"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              class="menu-item"
+              href="about.html"
+              >about</a
+            >
+          </li>
+          <li>
+            <a href="contact.html">
+              <button class="primary-light menu-item">contact us</button></a
+            >
+          </li>
+          <li>
+            <img
+              class="nav-circle"
+              src="images/bg-pattern-about-1-mobile-nav-1.svg"
+              alt="visual detail - half donut with stripes"
+            />
+          </li>
+        </ul>
+        <nav class="header-container hide-item-tablet">
+          <button class="hamburger">
+            <img
+              class="menu-icon"
+              src="images/icon-hamburger.svg"
+              alt="hamburger menu icon"
+            />
+            <img
+              class="close-icon"
+              src="images/icon-close.svg"
+              alt="menu close icon"
+            />
+          </button>
+        </nav>
+      </header>
+      <div class="desktop-articles">
+        <article class="contact-information">
           <img
-            class="nav-circle"
-            src="images/bg-pattern-about-1-mobile-nav-1.svg"
-            alt="visual detail - half donut with stripes"
+            src="./images/bg-pattern-about-2-contact-1.svg"
+            alt="icon on background"
+            class="vary-icon"
           />
-        </li>
-      </ul>
-      <nav class="header-container hide-item-tablet">
-        <button class="hamburger">
-          <img
-            class="menu-icon"
-            src="images/icon-hamburger.svg"
-            alt="hamburger menu icon"
-          />
-          <img
-            class="close-icon"
-            src="images/icon-close.svg"
-            alt="menu close icon"
-          />
-        </button>
-      </nav>
-    </header>
-    <article>
-      <img
-        src="./images/bg-pattern-about-2-contact-1.svg"
-        alt="icon on background"
-        class="vary-icon"
-      />
-      <h1 class="large">Contact</h1>
-      <h2>Ask us about</h2>
-      <div class="person">
-        <img
-          src="./images/icon-person.svg"
-          alt="icon-person"
-          class="icon"
-        />
-        <p class="body-large">The quality of our talent network</p>
+          <h1 class="large">Contact</h1>
+          <h2>Ask us about</h2>
+          <div class="person">
+            <img
+              src="./images/icon-person.svg"
+              alt="icon-person"
+              class="icon"
+            />
+            <p class="body-large">The quality of our talent network</p>
+          </div>
+          <div class="cog">
+            <img
+              src="./images/icon-cog.svg"
+              alt="icon-cog"
+              class="icon"
+            />
+            <p class="body-large">Usage & implementation of our software</p>
+          </div>
+          <div class="chart">
+            <img
+              src="./images/icon-chart.svg"
+              alt="icon-chart"
+              class="icon"
+            />
+            <p class="body-large">How we help drive innovation</p>
+          </div>
+        </article>
+        <article class="contact-form body-large">
+          <form>
+            <div class="form-group">
+              <label
+                for="name"
+                class="form-label"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                pattern="^[A-Z]{3, 50}"
+              />
+            </div>
+            <div class="form-group">
+              <label
+                for="email"
+                class="form-label"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label
+                for="company"
+                class="form-label"
+                >Company Name</label
+              >
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="form-input"
+                minlength="1"
+                maxlength="60"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label
+                for="title"
+                class="form-label"
+                >Title</label
+              >
+              <input
+                type="text"
+                id="title"
+                name="title"
+                class="form-input"
+                minlength="3"
+                maxlength="60"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label
+                for="message"
+                class="form-label"
+                >Message
+              </label>
+              <input
+                type="text"
+                id="message"
+                name="message"
+                class="form-textarea"
+                minlength="20"
+                maxlength="500"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="secondary-light"
+            >
+              submit
+            </button>
+          </form>
+          <div class="bg-contact-2">
+            <img
+              src="./images/bg-pattern-contact-2.svg"
+              alt="icon on background"
+            />
+          </div>
+        </article>
       </div>
-      <div class="cog">
-        <img
-          src="./images/icon-cog.svg"
-          alt="icon-cog"
-          class="icon"
-        />
-        <p class="body-large">Usage & implementation of our software</p>
-      </div>
-      <div class="chart">
-        <img
-          src="./images/icon-chart.svg"
-          alt="icon-chart"
-          class="icon"
-        />
-        <p class="body-large">How we help drive innovation</p>
-      </div>
-    </article>
-    <article class="contact-form body-large">
-      <form>
-        <div class="form-group">
-          <label
-            for="name"
-            class="form-label"
-            >Name</label
-          >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="form-input"
-            pattern="^[A-Z]{3, 50}"
-          />
-        </div>
-        <div class="form-group">
-          <label
-            for="email"
-            class="form-label"
-            >Email Address</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-input"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label
-            for="company"
-            class="form-label"
-            >Company Name</label
-          >
-          <input
-            type="text"
-            id="company"
-            name="company"
-            class="form-input"
-            minlength="1"
-            maxlength="60"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label
-            for="title"
-            class="form-label"
-            >Title</label
-          >
-          <input
-            type="text"
-            id="title"
-            name="title"
-            class="form-input"
-            minlength="3"
-            maxlength="60"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label
-            for="message"
-            class="form-label"
-            >Message
-          </label>
-          <input
-            type="text"
-            id="message"
-            name="message"
-            class="form-textarea"
-            minlength="20"
-            maxlength="500"
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          class="secondary-light"
-        >
-          submit
-        </button>
-      </form>
-      <div class="bg-image">
-        <img
-          src="./images/bg-pattern-contact-2.svg"
-          alt="icon on background"
-        />
-      </div>
-    </article>
-    <footer
-      class="background-color: var(—primarygeeen) mobile-footer-container desktop-footer"
-    >
-      <div>
-        <br />
-        <h3 class="footer-logo">myteam</h3>
-        <p
-          style="word-spacing: 20px"
-          class="body-large footer-nav"
-        >
+      <footer
+        class="background-color: var(—primarygeeen) mobile-footer-container desktop-footer"
+      >
+        <div>
           <br />
-          <a
-            class="mobile-footer-link body-large"
-            href="index.html"
-            >home</a
+          <h2 class="footer-logo">myteam</h2>
+          <p
+            style="word-spacing: 20px"
+            class="body-large footer-nav"
           >
-          <a
-            class="mobile-footer-link body-large"
-            href="about.html"
-            >about</a
-          >
-        </p>
-        <br />
-      </div>
-      <div class="body-large mobile-footer-grey-text address">
-        <p>987 Hillcrest Lane</p>
-        <p>Irvine, CA</p>
-        <p>California 92714</p>
-        <p>Call Us:949-833-7432</p>
-        <br />
-      </div>
-      <div class="footer-social">
-        <div class="social-icons">
-          <p>
+            <br />
             <a
-              href="https://facebook.com/"
-              target="_blank"
-              aria-label="Facebook"
-              class="mobile-footer-icons"
+              class="mobile-footer-link body-large"
+              href="index.html"
+              >home</a
             >
-              <i class="fa-brands fa-facebook"></i>
-            </a>
             <a
-              href="https://pinterest.com/"
-              target="_blank"
-              aria-label="Pinterest"
-              class="mobile-footer-icons"
+              class="mobile-footer-link body-large"
+              href="about.html"
+              >about</a
             >
-              <i class="fa-brands fa-pinterest"></i>
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              aria-label="Twitter"
-              class="mobile-footer-icons"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
+          </p>
+          <br />
+        </div>
+        <div class="body-large mobile-footer-grey-text address">
+          <p>987 Hillcrest Lane</p>
+          <p>Irvine, CA</p>
+          <p>California 92714</p>
+          <p>Call Us:949-833-7432</p>
+          <br />
+        </div>
+        <div class="footer-social">
+          <div class="social-icons">
+            <p>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                aria-label="Facebook"
+                class="mobile-footer-icons"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://pinterest.com/"
+                target="_blank"
+                aria-label="Pinterest"
+                class="mobile-footer-icons"
+              >
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                aria-label="Twitter"
+                class="mobile-footer-icons"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </p>
+          </div>
+          <p class="body-small mobile-footer-grey-text copyright">
+            Copyright 2020. All Rights Reserved
           </p>
         </div>
-        <p class="body-small mobile-footer-grey-text copyright">
-          Copyright 2020. All Rights Reserved
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

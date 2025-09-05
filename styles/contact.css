@@ -7,6 +7,29 @@
   --form-text: var(--primarywhite);
   --form-muted: var(--secondaryblueRAP);
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primarygreen);
+}
+.desktop-articles {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: grid;
+}
+footer {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
 
 /* .form-demo-wrap {
   background: var(--secondarygreenJUN); /* tamsus blokas kaip makete */
@@ -148,6 +171,8 @@ article h2 {
   flex-shrink: 0;
   margin-left: 2rem;
   margin-right: 2rem;
+  width: 72px;
+  height: 72px;
 }
 .contact-form {
   position: relative;
@@ -155,7 +180,7 @@ article h2 {
 button {
   margin-top: 1rem;
 }
-.bg-image {
+.bg-contact-2 {
   position: absolute;
   left: 90%;
   top: 80%;
@@ -164,10 +189,7 @@ button {
   overflow: hidden;
   z-index: 0;
 }
-footer {
-  z-index: 2;
-  position: relative;
-}
+
 .vary-icon {
   display: none;
 }
@@ -176,7 +198,7 @@ footer {
     padding-left: 8rem;
     padding-right: 8rem;
   }
-  .bg-image {
+  .bg-contact-2 {
     left: 88%;
     top: 75%;
   }
@@ -187,5 +209,31 @@ footer {
     display: block;
     position: absolute;
     right: 90%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .desktop-articles {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 2rem;
+  }
+  .contact-information {
+    grid-column: 1 / 7;
+  }
+  .contact-form {
+    grid-column: 7 / 13;
+  }
+  .bg-contact-2 {
+    top: 85%;
+  }
+  .contact-information h1 {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  .contact-information h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .icon {
+    margin-left: 0;
   }
 }

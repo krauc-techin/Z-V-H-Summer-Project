@@ -327,6 +327,7 @@ a {
   }
   .address {
     grid-column: 2;
+    text-align: left;
   }
   .footer-social {
     grid-column: 4;
