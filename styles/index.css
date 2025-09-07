@@ -230,28 +230,12 @@ article.build h2 {
   z-index: 0;
 }
 
+.find-talent-bg2 {
+  display: none;
+}
+
 /* ===== Tablet ===== */
 @media (min-width: 768px) {
-  .hide-item-tablet {
-    display: none;
-  }
-  .heater-container-tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
-    padding-right: 2rem;
-    word-spacing: 3rem;
-  }
-
-  .header-menu-horizontal-tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    /* color: red; */
-  }
-
   .find-talent {
     padding-left: 1rem;
     padding-top: 1rem;
@@ -315,25 +299,9 @@ article.build h2 {
     position: relative;
     z-index: 2;
   }
-}
 
-/* ===== Desktop ===== */
-@media (min-width: 1200px) {
-  .find-talent {
-    padding: 7rem 3rem 9rem;
-    padding-top: 7rem;
-    padding-right: 3rem;
-    padding-left: 1.5rem;
-    padding-bottom: 0rem;
-  }
-  .find-talent-title {
-    font-size: 3.5rem; /* ~56px */
-    line-height: 0.5;
-  }
-  .find-talent-bg {
-    left: -2.5rem;
-    bottom: -1.5rem;
-    width: 28rem;
+  .get-started-title {
+    font-size: 2rem;
   }
 }
 
@@ -540,21 +508,67 @@ body {
 }
 
 /* ===== Desktop ===== */
-@media (min-width: 1200px) {
-  .find-talent {
-    padding: 7rem 3rem 9rem;
-    padding-top: 7rem;
-    padding-right: 3rem;
-    padding-left: 1.5rem;
-    padding-bottom: 0rem;
+@media (min-width: 1440px) {
+  .find-talent-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: 0;
+    text-align: left;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
   }
+
   .find-talent-title {
-    font-size: 3.5rem; /* ~56px */
-    line-height: 0.5;
+    font-size: 6rem;
+    line-height: 6rem;
   }
+
+  .find-talent-text {
+    padding-top: 4rem;
+  }
+
+  .green-line {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--secondaryblueRAP);
+    position: absolute;
+    left: 55%;
+    top: 4rem;
+  }
+
   .find-talent-bg {
-    left: -2.5rem;
-    bottom: -1.5rem;
-    width: 28rem;
+    position: absolute;
+    right: -40rem;
+    bottom: 0;
   }
+
+  .find-talent-bg2 {
+    display: block;
+    position: absolute;
+    left: -6.8rem;
+    top: 3rem;
+  }
+}
+
+/* Ready to get started */
+
+.get-started-grid-container {
+  grid-template-columns: 3fr 1fr;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.mobile-ready-started-container {
+  position: relative;
+  padding-bottom: 4rem;
+  z-index: 0;
+}
+
+.mobile-ready-start-backgr-img {
+  bottom: -1rem;
+  width: 15%;
+  z-index: 1;
 }
