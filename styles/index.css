@@ -165,6 +165,74 @@ article.build h2 {
   margin-left: 2rem;
 }
 
+/* ===== Build & Manage — TABLET (>=768px) ===== */
+@media (min-width: 768px) {
+  .build {
+    background-color: var(--secondarygreenSACR);
+    padding: 4rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .build-wrap {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 2.25rem 2rem 2.5rem;
+    position: relative;
+  }
+
+  .home-line {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    margin: 0;
+  }
+
+  article.build h2 {
+    margin: 2.5rem 0 1.25rem;
+    padding: 0;
+    text-align: left;
+    max-width: 30ch;
+  }
+
+  .build-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 0;
+    margin: 1rem 0 1.25rem;
+    text-align: left;
+  }
+
+  .build-icon img {
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    flex: 0 0 56px;
+  }
+
+  .build-icon h3 {
+    margin: 0 0 0.25rem;
+    color: var(--primarycoral);
+  }
+
+  .build-icon p {
+    margin: 0;
+    color: var(--primarywhite);
+  }
+
+  .pattern-home-3 {
+    position: absolute;
+    right: -24px;
+    top: -18px;
+    left: auto;
+    width: 220px;
+    height: auto;
+    z-index: 0;
+    opacity: 1;
+  }
+}
+
 /* ZVH-20: Find the best talent (hero) */
 .find-talent {
   position: relative;
