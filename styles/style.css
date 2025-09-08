@@ -308,7 +308,7 @@ a {
   .header-menu-horizontal-tablet {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
     width: 100%;
     /* color: red; */
   }
@@ -360,6 +360,7 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
+  /* Footer */
   .desktop-footer {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
@@ -384,6 +385,12 @@ a {
   .social-icons {
     margin-left: 25%;
     margin-bottom: 3rem;
+  }
+
+  /* Header */
+
+  .header-menu-horizontal-tablet {
+    width: 80%;
   }
 }
 .mobile-footer-link:hover,
