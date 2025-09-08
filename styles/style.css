@@ -248,6 +248,7 @@ a {
 .mobile-ready-start-button {
   background-color: var(--primarycoral);
   border: solid 1px var(--secondarygreenSACR);
+  margin-top: 1rem;
 }
 
 .mobile-ready-start-backgr-img {
