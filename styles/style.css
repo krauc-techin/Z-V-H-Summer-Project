@@ -1,13 +1,9 @@
 /* CSS Reset */
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-/* Font and color rules */
-
 @font-face {
   font-family: "Livvic";
   src: url(./fonts/Livvic/Livvic-Bold.ttf) format("truetype");
@@ -68,9 +64,7 @@ button {
   font-size: 15px;
   line-height: 25px;
 }
-
-/* Buttons */
-
+/*Buttons*/
 .primary-light {
   background-color: transparent;
   border: 2px solid white;
@@ -80,7 +74,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-light:hover {
   background-color: white;
   border: 2px solid white;
@@ -90,7 +83,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-light:disabled {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(44, 98, 105, 50%);
@@ -100,7 +92,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-dark {
   background-color: white;
   border: 2px solid rgb(0, 37, 41);
@@ -110,7 +101,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-dark:hover {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(0, 37, 41);
@@ -120,7 +110,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-dark:disabled {
   background-color: white;
   border: 2px solid rgb(44, 98, 105, 50%);
@@ -130,7 +119,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .secondary-light {
   background-color: white;
   border-style: none;
@@ -140,7 +128,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .secondary-light:hover {
   background-color: rgb(121, 200, 199);
   border-style: none;
@@ -150,7 +137,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .secondary-light:disabled {
   background-color: rgb(44, 98, 105, 50%);
   border-style: none;
@@ -160,12 +146,14 @@ button {
   height: 48px;
   font-size: large;
 }
-
-/* Mobile */
-
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primarygreen);
+}
 /* Header */
-
-#header-container {
+.header-case {
   background-color: var(--primarygreen);
   padding: 3rem 1.5rem;
   color: white;
@@ -176,7 +164,6 @@ button {
 nav {
   align-self: center;
 }
-
 .hamburger {
   position: relative;
   width: 2rem;
@@ -187,18 +174,15 @@ nav {
   cursor: pointer;
   z-index: 100;
 }
-
 .menu-icon,
 .close-icon {
   position: relative;
   top: 0;
   left: 0;
 }
-
 .close-icon {
   display: none;
 }
-
 .menu {
   position: fixed;
   transform: translateX(100%);
@@ -212,20 +196,13 @@ nav {
   list-style: none;
   padding: 4rem 3rem;
 }
-
 .show-menu {
   transform: translateX(35%);
 }
-
 .menu-item {
   display: block;
-  margin: 2rem 0;
+  margin: 2rem 0rem;
 }
-/* 
-a {
-  color: white;
-  text-decoration: none;
-} */
 a.primary-light.menu-item {
   align-items: center;
   justify-content: center;
@@ -264,7 +241,6 @@ a.primary-light.menu-item {
   bottom: 0px;
   left: 0px;
 }
-
 /* mobile-footer */
 .mobile-footer-container {
   background-color: var(--secondarygreenDARK);
@@ -273,18 +249,15 @@ a.primary-light.menu-item {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-
 .mobile-footer-link {
   color: var(--primarywhite);
   text-decoration: none;
 }
-
 .mobile-footer-icons {
   color: var(--primarywhite);
   word-spacing: 20px;
   text-decoration: none;
 }
-
 .mobile-footer-icons:hover i {
   color: var(--primarycoral);
 }
