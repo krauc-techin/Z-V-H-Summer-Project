@@ -165,7 +165,7 @@ button {
 
 /* Header */
 
-header {
+#header-container {
   background-color: var(--primarygreen);
   padding: 3rem 1.5rem;
   color: white;
@@ -221,12 +221,16 @@ nav {
   display: block;
   margin: 2rem 0;
 }
-
+/* 
 a {
   color: white;
   text-decoration: none;
+} */
+a.primary-light.menu-item {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
 }
-
 .nav-circle {
   position: absolute;
   left: 40%;
@@ -281,10 +285,10 @@ a {
   text-decoration: none;
 }
 
-.mobile-footer-icons:hover {
+.mobile-footer-icons:hover i {
   color: var(--primarycoral);
 }
-.mobile-footer-link:hover {
+footer .mobile-footer-link:hover {
   color: var(--primarycoral);
 }
 .header-menu-horizontal-tablet {
