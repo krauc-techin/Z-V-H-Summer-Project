@@ -1,9 +1,7 @@
-/* ===== ZVH-19: Form Elements ===== */
-
 :root {
-  --form-line-normal: var(--primarywhite); /* #FFFFFF */
-  --form-line-active: var(--secondaryblueRAP); /* #79C8C7 */
-  --form-line-error: var(--primarycoral); /* #F67E7E */
+  --form-line-normal: var(--primarywhite);
+  --form-line-active: var(--secondaryblueRAP);
+  --form-line-error: var(--primarycoral);
   --form-text: var(--primarywhite);
   --form-muted: var(--secondaryblueRAP);
 }
@@ -30,52 +28,12 @@ footer {
   position: relative;
   width: 100%;
 }
-
-/* .form-demo-wrap {
-  background: var(--secondarygreenJUN); /* tamsus blokas kaip makete */
-/* border-radius: 18px;
-  padding: 24px;
-  color: var(--form-text);
-  max-width: 640px;
-  margin: 32px auto; */
-/* } */
-.form-caption {
-  font-family: "Livvic", sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.28em;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #2d6a6e;
-  margin-bottom: 14px;
-}
-
-.form-row {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-  margin-bottom: 18px;
-}
-.state-label {
-  width: 120px;
-  color: #b9c3c7;
-  font-size: 14px;
-}
-
-/* Laukai */
 .form-group {
-  /* width: 248px;
-  display: grid;
-  gap: 8px; */
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
-
 .form-label {
-  /* font-family: "Livvic", sans-serif;
-  font-weight: 700;
-  font-size: 14px; */
   color: var(--form-muted);
 }
-
 .form-input,
 .form-textarea {
   width: 100%;
@@ -83,25 +41,18 @@ footer {
   border: none;
   border-bottom: 1px solid var(--form-line-normal);
   color: var(--form-text);
-  /* font-family: "Livvic", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.3; */
   padding: 1rem 0 1rem;
   outline: none;
 }
-
 .form-textarea {
-  min-height: 84px;
+  height: 200px;
   resize: vertical;
 }
-
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: var(--form-muted);
   opacity: 0.95;
 }
-
 /* Active */
 .form-input:focus,
 .form-textarea:focus {
@@ -109,20 +60,18 @@ footer {
 }
 .form-textarea:focus {
   box-shadow: 0 0 0 2px rgba(121, 200, 199, 0.45);
-  border-radius: 8px;
-  padding: 10px 8px 12px;
+  border-radius: 0.5rem;
 }
 
 /* Helper */
 .form-help {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 10px; /* kaip Figmoje */
+  font-size: 10px;
   line-height: 1;
   color: var(--form-muted);
   font-style: italic;
 }
-
 /* Error */
 .form-group.has-error .form-label {
   color: var(--form-line-error);
@@ -138,8 +87,14 @@ footer {
 .form-group.has-error .form-help {
   color: var(--form-line-error);
 }
-/*ZVH-27*/
-/* @media (max-width: 767px) { */
+.form-input:invalid,
+.form-textarea:invalid {
+  border-bottom-color: var(--form-line-error);
+}
+.form-input:valid,
+.form-textarea:valid {
+  border-bottom-color: var(--form-line-active);
+}
 article {
   position: relative;
   background-color: var(--primarygreen);
@@ -167,6 +122,7 @@ article h2 {
   margin-bottom: 1.5rem;
 }
 .icon {
+  position: relative;
   left: 0;
   flex-shrink: 0;
   margin-left: 2rem;
@@ -177,8 +133,11 @@ article h2 {
 .contact-form {
   position: relative;
 }
-button {
+.contact-form button {
   margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
 }
 .bg-contact-2 {
   position: absolute;
@@ -189,7 +148,6 @@ button {
   overflow: hidden;
   z-index: 0;
 }
-
 .vary-icon {
   display: none;
 }
@@ -211,7 +169,7 @@ button {
     right: 90%;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .desktop-articles {
     grid-template-columns: repeat(12, 1fr);
     padding: 2rem;
