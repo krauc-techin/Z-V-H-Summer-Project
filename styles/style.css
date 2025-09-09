@@ -260,6 +260,7 @@ a {
 
 /* mobile-footer */
 .mobile-footer-container {
+  /* background-color: var(—primarygeeen); */
   background-color: var(--secondarygreenSACR);
   color: var(--primarywhite);
   text-align: center;
@@ -312,9 +313,58 @@ a {
     width: 100%;
     /* color: red; */
   }
+
+  /* Footer grid */
+  .tablet-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 2rem;
+    gap: 1rem;
+  }
+  .footer-logo {
+    margin-top: 5rem;
+    grid-column: 1;
+    padding-left: 5rem;
+    text-align: left;
+    margin-top: 3rem;
+  }
+  .footer-nav {
+    grid-column: 1;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    text-align: left;
+  }
+  .footer-social {
+    grid-column: 1;
+    text-align: left;
+    gap: 2rem;
+  }
+  .social-icons {
+    grid-column: 1;
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+  }
+  .address {
+    margin-top: 5rem;
+    grid-column: 2;
+    text-align: right;
+    padding-right: 4rem;
+  }
+  .copyright {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    margin-right: 4rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  /* Header */
+  .header-menu-horizontal-tablet {
+    width: 80%;
+  }
+
   /* Footer */
   .desktop-footer {
     display: grid;
@@ -323,9 +373,12 @@ a {
   }
   .footer-logo {
     grid-column: 1;
+    text-align: left;
+    padding-top: 0.7rem;
   }
   .footer-nav {
     grid-column: 1;
+    text-align: left;
   }
   .address {
     grid-column: 2;
@@ -333,19 +386,21 @@ a {
   }
   .footer-social {
     grid-column: 4;
+    grid-row: 1;
+    align-items: right;
+    padding-top: 4rem;
+    padding-right: -5rem;
   }
-  .copyright {
-    align-items: left;
-  }
-  .social-icons {
-    margin-left: 25%;
+  /* .social-icons {
+    margin-left: 2rem;
     margin-bottom: 3rem;
-  }
-
-  /* Header */
-
-  .header-menu-horizontal-tablet {
-    width: 80%;
+    align-items: right;
+  } */
+  .copyright {
+    grid-column: 4;
+    grid-row: 1;
+    align-items: right;
+    padding-top: 10rem;
   }
 }
 .mobile-footer-link:hover,
