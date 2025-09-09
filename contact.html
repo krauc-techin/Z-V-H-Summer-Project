@@ -34,27 +34,28 @@
         <!-- <h2 class="header-container">myteam</h2> -->
 
         <div class="header-menu-horizontal-tablet">
-          <div class="heater-container-tablet header-menu-left">
+          <div class="header-container-tablet header-menu-left">
             <h2>myteam</h2>
             <div class="header-menu-tablet">
-              <p class="hide-item-mobie">
-                <br />
+              <p class="hide-item-mobile">
                 <a
-                  class="mobile-footer-link"
+                  class="mobile-header-link"
                   href="index.html"
                   >home</a
                 >
                 <a
-                  class="mobile-footer-link"
+                  class="mobile-header-link"
                   href="about.html"
                   >about</a
                 >
               </p>
             </div>
           </div>
-          <div class="hide-item-mobie">
-            <a href="contact.html">
-              <button class="primary-light menu-item">contact us</button>
+          <div class="hide-item-mobile">
+            <a
+              href="contact.html"
+              class="primary-light menu-item"
+              >contact us
             </a>
           </div>
         </div>
@@ -76,8 +77,10 @@
             >
           </li>
           <li>
-            <a href="contact.html">
-              <button class="primary-light menu-item">contact us</button></a
+            <a
+              href="contact.html"
+              class="primary-light menu-item"
+              >contact us</a
             >
           </li>
           <li>
@@ -137,7 +140,7 @@
             <p class="body-large">How we help drive innovation</p>
           </div>
         </article>
-        <article class="contact-form body-large">
+        <article class="contact-form body-small">
           <form>
             <div class="form-group">
               <label
@@ -150,7 +153,8 @@
                 id="name"
                 name="name"
                 class="form-input"
-                pattern="^[A-Z]{3, 50}"
+                pattern="^[A-Za-z]{3,50}$"
+                required
               />
             </div>
             <div class="form-group">
@@ -205,15 +209,14 @@
                 class="form-label"
                 >Message
               </label>
-              <input
-                type="text"
+              <textarea
                 id="message"
                 name="message"
                 class="form-textarea"
                 minlength="20"
                 maxlength="500"
                 required
-              />
+              ></textarea>
             </div>
             <button
               type="submit"
@@ -246,7 +249,7 @@
             >
           </p>
         </div>
-        <div class="body-large mobile-footer-grey-text address">
+        <div class="body-small mobile-footer-grey-text address">
           <p>987 Hillcrest Lane</p>
           <p>Irvine, CA</p>
           <p>California 92714</p>
