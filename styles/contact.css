@@ -68,7 +68,7 @@ footer {
   outline: none;
 }
 .form-textarea {
-  min-height: 5rem;
+  height: 200px;
   resize: vertical;
 }
 .form-input::placeholder,
@@ -176,14 +176,6 @@ article h2 {
 .vary-icon {
   display: none;
 }
-.header-menu-horizontal-tablet .menu-item,
-.primary-light .menu-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
-
 @media (min-width: 768px) {
   article {
     padding-left: 8rem;
