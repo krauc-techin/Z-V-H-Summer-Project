@@ -284,10 +284,6 @@ a {
 .mobile-footer-icons:hover {
   color: rgb(121, 200, 199);
 }
-
-.mobile-footer-grey-text {
-  color: lightgray;
-}
 .hide-item-mobile {
   display: none;
 }
