@@ -232,6 +232,13 @@ a {
   left: 40%;
   bottom: 0;
 }
+.header-menu-horizontal-tablet .menu-item,
+.primary-light .menu-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
 
 /* mobile-ready-get-started */
 .mobile-ready-started-container {
@@ -260,7 +267,6 @@ a {
 
 /* mobile-footer */
 .mobile-footer-container {
-  /* background-color: var(—primarygeeen); */
   background-color: var(--secondarygreenSACR);
   color: var(--primarywhite);
   text-align: center;
@@ -286,18 +292,12 @@ a {
 .mobile-footer-grey-text {
   color: lightgray;
 }
-
-@media (max-width: 767px) {
-  .hide-item-mobie {
-    display: none;
-  }
+.hide-item-mobie {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .hide-item-tablet {
-    display: none;
-  }
-  .heater-container-tablet {
+  .header-container-tablet {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,16 +311,12 @@ a {
     justify-content: space-between;
     margin: 0 auto;
     width: 100%;
-    /* color: red; */
   }
-
-  /* Footer grid */
   .tablet-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr;
     gap: 2rem;
-    gap: 1rem;
   }
   .footer-logo {
     margin-top: 5rem;
@@ -337,7 +333,9 @@ a {
   }
   .footer-social {
     grid-column: 1;
-    text-align: left;
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
     gap: 2rem;
   }
   .social-icons {
@@ -346,29 +344,28 @@ a {
     margin-bottom: 3rem;
   }
   .address {
-    margin-top: 5rem;
     grid-column: 2;
     text-align: right;
     padding-right: 4rem;
+    margin-top: 3rem;
   }
   .copyright {
     grid-column: 2;
     grid-row: 2;
     text-align: right;
     margin-right: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* Header */
   .header-menu-horizontal-tablet {
     width: 80%;
   }
-
-  /* Footer */
   .desktop-footer {
     display: grid;
-    grid-template-columns: repeat(4, 3fr);
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
     gap: 2rem;
   }
   .footer-logo {
@@ -387,15 +384,11 @@ a {
   .footer-social {
     grid-column: 4;
     grid-row: 1;
-    align-items: right;
+    justify-content: flex-end;
+    display: flex;
     padding-top: 4rem;
-    padding-right: -5rem;
+    gap: 1.5rem;
   }
-  /* .social-icons {
-    margin-left: 2rem;
-    margin-bottom: 3rem;
-    align-items: right;
-  } */
   .copyright {
     grid-column: 4;
     grid-row: 1;
