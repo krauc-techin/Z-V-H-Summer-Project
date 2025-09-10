@@ -62,7 +62,10 @@ footer {
   box-shadow: 0 0 0 2px rgba(121, 200, 199, 0.45);
   border-radius: 0.5rem;
 }
-
+.form-input:hover,
+.form-textarea:hover {
+  border-bottom-color: var(--form-line-active);
+}
 /* Helper */
 .form-help {
   font-family: "Livvic", sans-serif;
@@ -73,6 +76,15 @@ footer {
   font-style: italic;
 }
 /* Error */
+
+.form-help {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--form-line-error);
+  margin-top: 4px;
+  visibility: hidden;
+}
 .form-group.has-error .form-label {
   color: var(--form-line-error);
 }
@@ -87,12 +99,22 @@ footer {
 .form-group.has-error .form-help {
   color: var(--form-line-error);
 }
-.form-input:invalid,
-.form-textarea:invalid {
+.form-input:focus:invalid,
+.form-textarea:focus:invalid {
   border-bottom-color: var(--form-line-error);
 }
-.form-input:valid,
-.form-textarea:valid {
+.form-input:focus:invalid ~ .form-help,
+.form-textarea:focus:invalid ~ .form-help {
+  visibility: visible;
+}
+.form-input:focus:invalid ~ .form-help::before {
+  content: "This field is required";
+}
+.form-textarea:focus:invalid ~ .form-help::before {
+  content: "This field is required";
+}
+.form-input:focus:valid,
+.form-textarea:focus:valid {
   border-bottom-color: var(--form-line-active);
 }
 article {
