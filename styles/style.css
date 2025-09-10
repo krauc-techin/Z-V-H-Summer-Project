@@ -73,6 +73,7 @@ button {
   width: 153px;
   height: 48px;
   font-size: large;
+  text-decoration: none;
 }
 .primary-light:hover {
   background-color: white;
@@ -202,6 +203,8 @@ nav {
 .menu-item {
   display: block;
   margin: 2rem 0rem;
+  text-decoration: none;
+  color: white;
 }
 a.primary-light.menu-item {
   align-items: center;
@@ -240,6 +243,15 @@ a.primary-light.menu-item {
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+
+.mobile-header-link {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-header-link:hover {
+  color: var(--primarycoral);
 }
 /* mobile-footer */
 .mobile-footer-container {
