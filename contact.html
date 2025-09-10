@@ -2,10 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>My Team contact</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/contact.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,7 +23,10 @@
       href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script defer src="script.js"></script>
+    <script
+      defer
+      src="script.js"
+    ></script>
   </head>
   <body>
     <div class="contact-page">
@@ -26,13 +38,23 @@
               <h2>myteam</h2>
               <div class="header-menu-tablet">
                 <div class="hide-item-mobile">
-                  <a class="mobile-header-link" href="index.html">home</a>
-                  <a class="mobile-header-link" href="about.html">about</a>
+                  <a
+                    class="mobile-header-link"
+                    href="index.html"
+                    >home</a
+                  >
+                  <a
+                    class="mobile-header-link"
+                    href="about.html"
+                    >about</a
+                  >
                 </div>
               </div>
             </div>
             <div class="hide-item-mobile">
-              <a href="contact.html" class="primary-light menu-item"
+              <a
+                href="contact.html"
+                class="primary-light menu-item"
                 >contact us
               </a>
             </div>
@@ -41,13 +63,23 @@
           <!-- animated menu -->
           <ul class="menu hide-item-tablet">
             <li>
-              <a class="menu-item body-large" href="index.html">home</a>
+              <a
+                class="menu-item body-large"
+                href="index.html"
+                >home</a
+              >
             </li>
             <li>
-              <a class="menu-item" href="about.html">about</a>
+              <a
+                class="menu-item"
+                href="about.html"
+                >about</a
+              >
             </li>
             <li>
-              <a href="contact.html" class="primary-light menu-item"
+              <a
+                href="contact.html"
+                class="primary-light menu-item"
                 >contact us</a
               >
             </li>
@@ -93,29 +125,46 @@
             <p class="body-large">The quality of our talent network</p>
           </div>
           <div class="cog">
-            <img src="./images/icon-cog.svg" alt="icon-cog" class="icon" />
+            <img
+              src="./images/icon-cog.svg"
+              alt="icon-cog"
+              class="icon"
+            />
             <p class="body-large">Usage & implementation of our software</p>
           </div>
           <div class="chart">
-            <img src="./images/icon-chart.svg" alt="icon-chart" class="icon" />
+            <img
+              src="./images/icon-chart.svg"
+              alt="icon-chart"
+              class="icon"
+            />
             <p class="body-large">How we help drive innovation</p>
           </div>
         </article>
         <article class="contact-form body-small">
           <form>
             <div class="form-group">
-              <label for="name" class="form-label">Name</label>
+              <label
+                for="name"
+                class="form-label"
+                >Name</label
+              >
               <input
                 type="text"
                 id="name"
                 name="name"
                 class="form-input"
-                pattern="^[A-Za-z]{3,50}$"
+                pattern="^\b([A-Ž][-,a-ž. ']+[ ]*)+"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
-              <label for="email" class="form-label">Email Address</label>
+              <label
+                for="email"
+                class="form-label"
+                >Email Address</label
+              >
               <input
                 type="email"
                 id="email"
@@ -123,9 +172,14 @@
                 class="form-input"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
-              <label for="company" class="form-label">Company Name</label>
+              <label
+                for="company"
+                class="form-label"
+                >Company Name</label
+              >
               <input
                 type="text"
                 id="company"
@@ -135,9 +189,14 @@
                 maxlength="60"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
-              <label for="title" class="form-label">Title</label>
+              <label
+                for="title"
+                class="form-label"
+                >Title</label
+              >
               <input
                 type="text"
                 id="title"
@@ -147,9 +206,14 @@
                 maxlength="60"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
-              <label for="message" class="form-label">Message </label>
+              <label
+                for="message"
+                class="form-label"
+                >Message
+              </label>
               <textarea
                 id="message"
                 name="message"
@@ -158,8 +222,14 @@
                 maxlength="500"
                 required
               ></textarea>
+              <span class="form-help"></span>
             </div>
-            <button type="submit" class="secondary-light">submit</button>
+            <button
+              type="submit"
+              class="secondary-light"
+            >
+              submit
+            </button>
           </form>
           <div class="bg-contact-2">
             <img
@@ -173,8 +243,16 @@
         <div>
           <h2 class="footer-logo">myteam</h2>
           <p class="body-large footer-nav">
-            <a class="mobile-footer-link body-large" href="index.html">home</a>
-            <a class="mobile-footer-link body-large" href="about.html">about</a>
+            <a
+              class="mobile-footer-link body-large"
+              href="index.html"
+              >home</a
+            >
+            <a
+              class="mobile-footer-link body-large"
+              href="about.html"
+              >about</a
+            >
           </p>
         </div>
         <div class="body-small mobile-footer-grey-text address">
