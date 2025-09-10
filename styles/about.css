@@ -25,6 +25,7 @@ article {
 
 .about-pattern {
   position: absolute;
+  max-width: 10rem;
   right: -5rem;
   bottom: -5rem;
   overflow: hidden;
@@ -61,6 +62,7 @@ article {
   top: -5rem;
   z-index: 2;
   width: 40%;
+  max-width: 10rem;
 }
 
 .director-pattern-square {
@@ -119,6 +121,7 @@ article {
 
 .card-back-icon {
   padding: 0.5rem;
+  color: white;
 }
 
 .card-back-p {
@@ -211,7 +214,7 @@ article {
 
   .about-pattern {
     position: absolute;
-    right: -6.5rem;
+    right: -5rem;
     bottom: 0;
   }
 
@@ -252,7 +255,7 @@ article {
 
   .director-pattern-circle {
     top: 0;
-    left: -7rem;
+    left: -6rem;
   }
 
   /* Some of our clients */
@@ -302,9 +305,13 @@ article {
     z-index: 1;
   }
 
-  footer {
+  .footer-container {
     position: relative;
     z-index: 2;
+  }
+  
+   .mobile-ready-start-button {
+    margin-top: 0;
   }
 }
 
@@ -423,31 +430,4 @@ article {
     z-index: 1;
   }
 
-  /* Footer */
-
-  footer {
-    display: grid;
-    grid-template-columns: repeat(4, 3fr);
-    gap: 2rem;
-    padding: 2rem;
-  }
-  footer h3 {
-    grid-column: 1;
-  }
-  footer p {
-    grid-column: 1;
-  }
-  .address {
-    grid-column: 2;
-  }
-  .footer-social {
-    grid-column: 4;
-  }
-  .copyright {
-    align-items: left;
-  }
-  .social-icons {
-    margin-left: 25%;
-    margin-bottom: 3rem;
-  }
 }
