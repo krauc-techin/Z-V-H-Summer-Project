@@ -29,14 +29,14 @@
 h1.large {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
 }
 h1.small {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 56px;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }
 h2 {
   font-family: "Livvic", sans-serif;
@@ -47,104 +47,104 @@ h2 {
 h3 {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .body-large,
 a,
 button {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .body-small {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
 }
 /*Buttons*/
 .primary-light {
   background-color: transparent;
   border: 2px solid white;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: white;
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
   text-decoration: none;
 }
 .primary-light:hover {
   background-color: white;
   border: 2px solid white;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .primary-light:disabled {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(44, 98, 105, 50%);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(44, 98, 105, 50%);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .primary-dark {
   background-color: white;
   border: 2px solid rgb(0, 37, 41);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .primary-dark:hover {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(0, 37, 41);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: white;
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .primary-dark:disabled {
   background-color: white;
   border: 2px solid rgb(44, 98, 105, 50%);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(44, 98, 105, 50%);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .secondary-light {
   background-color: white;
   border-style: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .secondary-light:hover {
   background-color: rgb(121, 200, 199);
   border-style: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .secondary-light:disabled {
   background-color: rgb(44, 98, 105, 50%);
   border-style: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
 .page {
@@ -162,8 +162,9 @@ button {
   justify-content: space-between;
   position: relative;
 }
-nav {
+.header-container {
   align-self: center;
+  display: block;
 }
 .hamburger {
   position: relative;
@@ -223,14 +224,17 @@ a.primary-light.menu-item {
   justify-content: center;
   font-weight: 700;
 }
+
+/* Ready to get started */
+
 .mobile-ready-started-container {
   background-color: var(--primarycoral);
   color: var(--secondarygreenSACR);
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 7rem;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 3rem;
+  padding-right: 3rem;
   position: relative;
 }
 .mobile-ready-start-button {
@@ -241,8 +245,8 @@ a.primary-light.menu-item {
 .mobile-ready-start-backgr-img {
   display: block;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
 }
 
 .mobile-header-link {
@@ -254,12 +258,12 @@ a.primary-light.menu-item {
   color: var(--primarycoral);
 }
 /* mobile-footer */
-.mobile-footer-container {
+.footer-container {
   background-color: var(--secondarygreenDARK);
   color: var(--primarywhite);
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 1.875rem;
+  padding-bottom: 1.25rem;
 }
 .mobile-footer-link {
   color: var(--primarywhite);
@@ -267,25 +271,26 @@ a.primary-light.menu-item {
 }
 .mobile-footer-icons {
   color: var(--primarywhite);
-  word-spacing: 20px;
+  word-spacing: 1.25rem;
   text-decoration: none;
 }
-.mobile-footer-icons:hover i {
+.mobile-footer-icons:hover {
   color: var(--primarycoral);
 }
-footer .mobile-footer-link:hover {
+.mobile-footer-link:hover {
   color: var(--primarycoral);
 }
 .header-menu-horizontal-tablet {
   display: none;
 }
-.header-container {
-  display: block;
-}
+
 .hide-item-tablet {
   display: block;
 }
 @media (min-width: 768px) {
+
+  /* Header */
+
   .header-container-tablet {
     display: flex;
     justify-content: space-between;
@@ -316,7 +321,10 @@ footer .mobile-footer-link:hover {
   header {
     padding: 2rem 2rem;
   }
-  .tablet-footer {
+
+  /* Footer */
+
+  .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr;
@@ -363,11 +371,17 @@ footer .mobile-footer-link:hover {
 }
 
 @media (min-width: 1440px) {
+
+  /* Header */
+
   .header-menu-horizontal-tablet {
     margin: 0 auto;
     width: 80%;
   }
-  .desktop-footer {
+
+  /* Footer */
+  
+  .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: start;
