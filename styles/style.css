@@ -1,13 +1,9 @@
 /* CSS Reset */
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-/* Font and color rules */
-
 @font-face {
   font-family: "Livvic";
   src: url(./fonts/Livvic/Livvic-Bold.ttf) format("truetype");
@@ -68,9 +64,7 @@ button {
   font-size: 15px;
   line-height: 25px;
 }
-
-/* Buttons */
-
+/*Buttons*/
 .primary-light {
   background-color: transparent;
   border: 2px solid white;
@@ -79,8 +73,8 @@ button {
   width: 153px;
   height: 48px;
   font-size: large;
+  text-decoration: none;
 }
-
 .primary-light:hover {
   background-color: white;
   border: 2px solid white;
@@ -90,7 +84,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-light:disabled {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(44, 98, 105, 50%);
@@ -100,7 +93,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-dark {
   background-color: white;
   border: 2px solid rgb(0, 37, 41);
@@ -110,7 +102,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-dark:hover {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(0, 37, 41);
@@ -120,7 +111,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .primary-dark:disabled {
   background-color: white;
   border: 2px solid rgb(44, 98, 105, 50%);
@@ -130,7 +120,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .secondary-light {
   background-color: white;
   border-style: none;
@@ -140,7 +129,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .secondary-light:hover {
   background-color: rgb(121, 200, 199);
   border-style: none;
@@ -150,7 +138,6 @@ button {
   height: 48px;
   font-size: large;
 }
-
 .secondary-light:disabled {
   background-color: rgb(44, 98, 105, 50%);
   border-style: none;
@@ -160,12 +147,14 @@ button {
   height: 48px;
   font-size: large;
 }
-
-/* Mobile */
-
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primarygreen);
+}
 /* Header */
-
-header {
+.header-case {
   background-color: var(--primarygreen);
   padding: 3rem 1.5rem;
   color: white;
@@ -176,7 +165,6 @@ header {
 nav {
   align-self: center;
 }
-
 .hamburger {
   position: relative;
   width: 2rem;
@@ -187,18 +175,15 @@ nav {
   cursor: pointer;
   z-index: 100;
 }
-
 .menu-icon,
 .close-icon {
   position: relative;
   top: 0;
   left: 0;
 }
-
 .close-icon {
   display: none;
 }
-
 .menu {
   position: fixed;
   transform: translateX(100%);
@@ -212,21 +197,20 @@ nav {
   list-style: none;
   padding: 4rem 3rem;
 }
-
 .show-menu {
   transform: translateX(35%);
 }
-
 .menu-item {
   display: block;
-  margin: 2rem 0;
-}
-
-a {
-  color: white;
+  margin: 2rem 0rem;
   text-decoration: none;
+  color: white;
 }
-
+a.primary-light.menu-item {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
 .nav-circle {
   position: absolute;
   left: 40%;
@@ -261,6 +245,14 @@ a {
   left: 0px;
 }
 
+.mobile-header-link {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-header-link:hover {
+  color: var(--primarycoral);
+}
 /* mobile-footer */
 .mobile-footer-container {
   background-color: var(--secondarygreenDARK);
@@ -269,22 +261,19 @@ a {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-
 .mobile-footer-link {
   color: var(--primarywhite);
   text-decoration: none;
 }
-
 .mobile-footer-icons {
   color: var(--primarywhite);
   word-spacing: 20px;
   text-decoration: none;
 }
-
-.mobile-footer-icons:hover {
+.mobile-footer-icons:hover i {
   color: var(--primarycoral);
 }
-.mobile-footer-link:hover {
+footer .mobile-footer-link:hover {
   color: var(--primarycoral);
 }
 .header-menu-horizontal-tablet {
