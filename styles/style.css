@@ -1,13 +1,9 @@
 /* CSS Reset */
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-/* Font and color rules */
-
 @font-face {
   font-family: "Livvic";
   src: url(./fonts/Livvic/Livvic-Bold.ttf) format("truetype");
@@ -33,14 +29,14 @@
 h1.large {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
 }
 h1.small {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 56px;
+  font-size: 4rem;
+  line-height: 3.5rem;
 }
 h2 {
   font-family: "Livvic", sans-serif;
@@ -51,121 +47,114 @@ h2 {
 h3 {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .body-large,
 a,
 button {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .body-small {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
 }
-
-/* Buttons */
-
+/*Buttons*/
 .primary-light {
   background-color: transparent;
   border: 2px solid white;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: white;
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
+  text-decoration: none;
 }
-
 .primary-light:hover {
   background-color: white;
   border: 2px solid white;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .primary-light:disabled {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(44, 98, 105, 50%);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(44, 98, 105, 50%);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .primary-dark {
   background-color: white;
   border: 2px solid rgb(0, 37, 41);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .primary-dark:hover {
   background-color: rgb(0, 37, 41);
   border: 2px solid rgb(0, 37, 41);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: white;
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .primary-dark:disabled {
   background-color: white;
   border: 2px solid rgb(44, 98, 105, 50%);
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(44, 98, 105, 50%);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .secondary-light {
   background-color: white;
   border-style: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .secondary-light:hover {
   background-color: rgb(121, 200, 199);
   border-style: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
 .secondary-light:disabled {
   background-color: rgb(44, 98, 105, 50%);
   border-style: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   color: rgb(0, 37, 41);
-  width: 153px;
-  height: 48px;
+  width: 9.5625rem;
+  height: 3rem;
   font-size: large;
 }
-
-/* Mobile */
-
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primarygreen);
+}
 /* Header */
-
-header {
+.header-case {
   background-color: var(--primarygreen);
   padding: 3rem 1.5rem;
   color: white;
@@ -173,10 +162,10 @@ header {
   justify-content: space-between;
   position: relative;
 }
-nav {
+.header-container {
   align-self: center;
+  display: block;
 }
-
 .hamburger {
   position: relative;
   width: 2rem;
@@ -187,7 +176,6 @@ nav {
   cursor: pointer;
   z-index: 100;
 }
-
 .menu-icon,
 .close-icon {
   position: relative;
@@ -195,10 +183,24 @@ nav {
   left: 0;
 }
 
-.close-icon {
+.header-menu-horizontal-tablet {
   display: none;
 }
 
+.hide-item-tablet {
+  display: block;
+}
+.mobile-header-link {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-header-link:hover {
+  color: var(--primarycoral);
+}
+.close-icon {
+  display: none;
+}
 .menu {
   position: fixed;
   transform: translateX(100%);
@@ -212,21 +214,20 @@ nav {
   list-style: none;
   padding: 4rem 3rem;
 }
-
 .show-menu {
   transform: translateX(35%);
 }
-
 .menu-item {
   display: block;
-  margin: 2rem 0;
-}
-
-a {
-  color: white;
+  margin: 2rem 0rem;
   text-decoration: none;
+  color: white;
 }
-
+a.primary-light.menu-item {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
 .nav-circle {
   position: absolute;
   left: 40%;
@@ -239,64 +240,78 @@ a {
   justify-content: center;
   font-weight: 700;
 }
+
+/* Ready to get started */
+
 .mobile-ready-started-container {
   background-color: var(--primarycoral);
   color: var(--secondarygreenSACR);
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 7rem;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 3rem;
+  padding-right: 3rem;
   position: relative;
 }
 .mobile-ready-start-button {
   background-color: var(--primarycoral);
-  border: solid 1px var(--secondarygreenSACR);
+  border: solid 2px var(--secondarygreenSACR);
   margin-top: 1rem;
 }
 .mobile-ready-start-backgr-img {
   display: block;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
 }
 
+
 /* mobile-footer */
-.mobile-footer-container {
+.footer-container {
   background-color: var(--secondarygreenDARK);
   color: var(--primarywhite);
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  
 }
-
 .mobile-footer-link {
   color: var(--primarywhite);
   text-decoration: none;
 }
-
 .mobile-footer-icons {
   color: var(--primarywhite);
-  word-spacing: 20px;
+  word-spacing: 0.5rem;
   text-decoration: none;
 }
-
 .mobile-footer-icons:hover {
   color: var(--primarycoral);
 }
 .mobile-footer-link:hover {
   color: var(--primarycoral);
 }
-.header-menu-horizontal-tablet {
-  display: none;
+
+.address {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #99a8a9;
 }
-.header-container {
-  display: block;
+
+.copyright {
+  color: #99a8a9;
+  margin-top: 1rem;
 }
-.hide-item-tablet {
-  display: block;
+
+.footer-nav {
+  word-spacing: 2rem;
+  padding-top: 2rem;
 }
+
+
 @media (min-width: 768px) {
+
+  /* Header */
+
   .header-container-tablet {
     display: flex;
     justify-content: space-between;
@@ -327,11 +342,14 @@ a {
   header {
     padding: 2rem 2rem;
   }
-  .tablet-footer {
+
+  /* Footer */
+
+  .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr;
-    gap: 2rem;
+    padding: 0;
   }
   .footer-logo {
     margin-top: 5rem;
@@ -343,6 +361,7 @@ a {
   }
   .footer-nav {
     grid-column: 1;
+    grid-row: 2;
     padding-left: 5rem;
     padding-top: 1rem;
     text-align: left;
@@ -356,7 +375,7 @@ a {
   }
   .social-icons {
     grid-column: 1;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
   .address {
     grid-column: 2;
@@ -369,20 +388,27 @@ a {
     grid-row: 2;
     text-align: right;
     margin-right: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1440px) {
+
+  /* Header */
+
   .header-menu-horizontal-tablet {
     margin: 0 auto;
     width: 80%;
   }
-  .desktop-footer {
+
+  /* Footer */
+  
+  .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     align-items: start;
-    gap: 2rem;
     padding: 0rem;
     margin: 0rem;
   }
@@ -403,12 +429,16 @@ a {
     grid-row: 1;
     justify-content: flex-end;
     display: flex;
-    padding-right: 5rem;
+    padding-right: 6.5rem;
     padding-top: 3rem;
+    margin-bottom: 3rem;
+    
   }
   .copyright {
-    grid-column: 4;
-    grid-row: 2;
+    grid-column: 4/4;
+    grid-row: 1/1;
+    position: absolute;
+    bottom: 2rem;
   }
   .mobile-footer-link {
     padding-right: 2rem;

@@ -270,7 +270,7 @@ article.build h2 .hline {
     bottom: 0px;
     left: auto;
   }
-}
+
 
 /* Find the best talent */
 .find-talent {
@@ -605,9 +605,13 @@ body {
     z-index: 1;
   }
 
-  footer {
+  .footer-container {
     position: relative;
     z-index: 2;
+  }
+  
+  .mobile-ready-start-button {
+    margin-top: 0;
   }
 }
 

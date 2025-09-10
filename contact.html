@@ -31,80 +31,81 @@
   <body>
     <div class="contact-page">
       <header>
-        <!-- <h2 class="header-container">myteam</h2> -->
-        <h2 class="hide-logo-mobile">myteam</h2>
-        <div class="header-menu-horizontal-tablet">
-          <div class="header-container-tablet header-menu-left">
-            <h2>myteam</h2>
-            <div class="header-menu-tablet">
-              <p class="hide-item-mobile">
-                <a
-                  class="mobile-header-link"
-                  href="index.html"
-                  >home</a
-                >
-                <a
-                  class="mobile-header-link"
-                  href="about.html"
-                  >about</a
-                >
-              </p>
+        <div class="header-case">
+          <h2 class="hide-logo-mobile">myteam</h2>
+          <div class="header-menu-horizontal-tablet">
+            <div class="header-container-tablet header-menu-left">
+              <h2>myteam</h2>
+              <div class="header-menu-tablet">
+                <div class="hide-item-mobile">
+                  <a
+                    class="mobile-header-link"
+                    href="index.html"
+                    >home</a
+                  >
+                  <a
+                    class="mobile-header-link"
+                    href="about.html"
+                    >about</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hide-item-mobile">
+              <a
+                href="contact.html"
+                class="primary-light menu-item"
+                >contact us
+              </a>
             </div>
           </div>
-          <div class="hide-item-mobile">
-            <a
-              href="contact.html"
-              class="primary-light menu-item"
-              >contact us
-            </a>
-          </div>
-        </div>
 
-        <!-- animated menu -->
-        <ul class="menu hide-item-tablet">
-          <li>
-            <a
-              class="menu-item body-large"
-              href="index.html"
-              >home</a
-            >
-          </li>
-          <li>
-            <a
-              class="menu-item"
-              href="about.html"
-              >about</a
-            >
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="primary-light menu-item"
-              >contact us</a
-            >
-          </li>
-          <li>
-            <img
-              class="nav-circle"
-              src="images/bg-pattern-about-1-mobile-nav-1.svg"
-              alt="visual detail - half donut with stripes"
-            />
-          </li>
-        </ul>
-        <nav class="header-container hide-item-tablet">
-          <button class="hamburger">
-            <img
-              class="menu-icon"
-              src="images/icon-hamburger.svg"
-              alt="hamburger menu icon"
-            />
-            <img
-              class="close-icon"
-              src="images/icon-close.svg"
-              alt="menu close icon"
-            />
-          </button>
-        </nav>
+          <!-- animated menu -->
+          <ul class="menu hide-item-tablet">
+            <li>
+              <a
+                class="menu-item body-large"
+                href="index.html"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-item"
+                href="about.html"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="primary-light menu-item"
+                >contact us</a
+              >
+            </li>
+            <li>
+              <img
+                class="nav-circle"
+                src="images/bg-pattern-about-1-mobile-nav-1.svg"
+                alt="visual detail - half donut with stripes"
+              />
+            </li>
+          </ul>
+          <nav class="header-container hide-item-tablet">
+            <button class="hamburger">
+              <img
+                class="menu-icon"
+                src="images/icon-hamburger.svg"
+                alt="hamburger menu icon"
+              />
+              <img
+                class="close-icon"
+                src="images/icon-close.svg"
+                alt="menu close icon"
+              />
+            </button>
+          </nav>
+        </div>
       </header>
       <div class="desktop-articles">
         <article class="contact-information">
@@ -153,9 +154,10 @@
                 id="name"
                 name="name"
                 class="form-input"
-                pattern="^[A-Za-z]{3,50}$"
+                pattern="^\b([A-Ž][-,a-ž. ']+[ ]*)+"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
               <label
@@ -170,6 +172,7 @@
                 class="form-input"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
               <label
@@ -186,6 +189,7 @@
                 maxlength="60"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
               <label
@@ -202,6 +206,7 @@
                 maxlength="60"
                 required
               />
+              <span class="form-help"></span>
             </div>
             <div class="form-group">
               <label
@@ -217,6 +222,7 @@
                 maxlength="500"
                 required
               ></textarea>
+              <span class="form-help"></span>
             </div>
             <button
               type="submit"
@@ -233,7 +239,7 @@
           </div>
         </article>
       </div>
-      <footer class="mobile-footer-container desktop-footer tablet-footer">
+      <footer class="footer-container">
         <div>
           <h2 class="footer-logo">myteam</h2>
           <p class="body-large footer-nav">

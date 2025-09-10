@@ -23,7 +23,7 @@ body {
   flex-basis: auto;
   display: grid;
 }
-footer {
+.footer-container {
   z-index: 2;
   position: relative;
   width: 100%;
@@ -45,7 +45,7 @@ footer {
   outline: none;
 }
 .form-textarea {
-  height: 200px;
+  height: 12.5rem;
   resize: vertical;
 }
 .form-input::placeholder,
@@ -62,17 +62,29 @@ footer {
   box-shadow: 0 0 0 2px rgba(121, 200, 199, 0.45);
   border-radius: 0.5rem;
 }
-
+.form-input:hover,
+.form-textarea:hover {
+  border-bottom-color: var(--form-line-active);
+}
 /* Helper */
 .form-help {
   font-family: "Livvic", sans-serif;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 1;
   color: var(--form-muted);
   font-style: italic;
 }
 /* Error */
+
+.form-help {
+  display: block;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--form-line-error);
+  margin-top: 0.25rem;
+  visibility: hidden;
+}
 .form-group.has-error .form-label {
   color: var(--form-line-error);
 }
@@ -87,12 +99,22 @@ footer {
 .form-group.has-error .form-help {
   color: var(--form-line-error);
 }
-.form-input:invalid,
-.form-textarea:invalid {
+.form-input:focus:invalid,
+.form-textarea:focus:invalid {
   border-bottom-color: var(--form-line-error);
 }
-.form-input:valid,
-.form-textarea:valid {
+.form-input:focus:invalid ~ .form-help,
+.form-textarea:focus:invalid ~ .form-help {
+  visibility: visible;
+}
+.form-input:focus:invalid ~ .form-help::before {
+  content: "This field is required";
+}
+.form-textarea:focus:invalid ~ .form-help::before {
+  content: "This field is required";
+}
+.form-input:focus:valid,
+.form-textarea:focus:valid {
   border-bottom-color: var(--form-line-active);
 }
 article {
@@ -127,8 +149,8 @@ article h2 {
   flex-shrink: 0;
   margin-left: 2rem;
   margin-right: 2rem;
-  width: 72px;
-  height: 72px;
+  width: 4rem;
+  height: 4rem;
 }
 .contact-form {
   position: relative;
@@ -150,6 +172,32 @@ article h2 {
 }
 .vary-icon {
   display: none;
+}
+@media (max-width: 480px) {
+  h1.large {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+  article {
+    padding: 1rem;
+  }
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .bg-contact-2 {
+    width: 120px;
+    height: 140px;
+    left: 70%;
+    top: 85%;
+  }
+  .contact-form button {
+    margin: 1rem auto 2rem;
+    display: inline-block;
+  }
 }
 @media (min-width: 768px) {
   article {

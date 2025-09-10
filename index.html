@@ -2,19 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Team</title>
-    <link
-      rel="stylesheet"
-      href="./styles/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/index.css"
-    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,90 +15,132 @@
       rel="stylesheet"
     />
 
-    <script
-      defer
-      src="script.js"
-    ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <header>
-      <h2 class="hide-logo-mobile">myteam</h2>
-      <div class="header-menu-horizontal-tablet">
-        <div class="header-container-tablet header-menu-left">
-          <h2>myteam</h2>
-          <div class="header-menu-tablet">
-            <p class="hide-item-mobie">
-              <br />
-              <a
-                class="mobile-footer-link"
-                href="index.html"
-                >home</a
+    <div class="page">
+      <header>
+        <div class="header-case">
+          <h2 class="hide-logo-mobile">myteam</h2>
+          <div class="header-menu-horizontal-tablet">
+            <div class="header-container-tablet header-menu-left">
+              <h2>myteam</h2>
+              <div class="header-menu-tablet">
+                <div class="hide-item-mobile">
+                  <a class="mobile-header-link" href="index.html">home</a>
+                  <a class="mobile-header-link" href="about.html">about</a>
+                </div>
+              </div>
+            </div>
+            <div class="hide-item-mobile">
+              <a href="contact.html" class="primary-light menu-item"
+                >contact us</a
               >
-              <a
-                class="mobile-footer-link"
-                href="about.html"
-                >about</a
+            </div>
+          </div>
+
+          <!-- animated menu -->
+          <ul class="menu hide-item-tablet">
+            <li>
+              <a class="menu-item body-large" href="index.html">home</a>
+            </li>
+            <li>
+              <a class="menu-item" href="about.html">about</a>
+            </li>
+            <li>
+              <a href="contact.html" class="primary-light menu-item"
+                >contact us</a
               >
+            </li>
+            <li>
+              <img
+                class="nav-circle"
+                src="images/bg-pattern-about-1-mobile-nav-1.svg"
+                alt="visual detail - half donut with stripes"
+              />
+            </li>
+          </ul>
+          <nav class="header-container hide-item-tablet">
+            <button class="hamburger">
+              <div class="hide-item-tablet">
+                <img
+                  class="menu-icon"
+                  src="images/icon-hamburger.svg"
+                  alt="hamburger menu icon"
+                />
+              </div>
+              <img
+                class="close-icon"
+                src="images/icon-close.svg"
+                alt="menu close icon"
+              />
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- ZVH-20: Find the best talent (hero) -->
+      <section class="find-talent" aria-labelledby="find-talent-title">
+        <div class="find-talent-inner">
+          <div class="find-talent-h1">
+            <h1 id="find-talent-title" class="find-talent-title">
+              Find the best <span class="accent">talent</span>
+            </h1>
+          </div>
+
+          <div class="find-talent-text">
+            <div class="green-line"></div>
+            <p class="find-talent-lead body-small">
+              Finding the right people and building high performing teams can be
+              hard. Most companies aren’t tapping into the abundance of global
+              talent. We’re about to change that.
             </p>
           </div>
         </div>
-        <div class="hide-item-mobie">
-          <a
-            href="contact.html"
-            class="primary-light menu-item"
-            >contact us</a
-          >
-        </div>
-      </div>
+        <br />
+        <br />
+        <br />
+        <img
+          class="find-talent-bg"
+          src="images/bg-pattern-home-2.svg"
+          alt="background pattern image for find talent section"
+          aria-hidden="true"
+        />
+        <img
+          class="find-talent-bg2"
+          src="images/bg-pattern-home-1.svg"
+          alt="background pattern image for find talent section"
+        />
+      </section>
 
-      <!-- animated menu -->
-      <ul class="menu hide-item-tablet">
-        <li>
-          <a
-            class="menu-item body-large"
-            href="index.html"
-            >home</a
-          >
-        </li>
-        <li>
-          <a
-            class="menu-item"
-            href="about.html"
-            >about</a
-          >
-        </li>
-        <li>
-          <a
-            href="contact.html"
-            class="primary-light menu-item"
-            >contact us</a
-          >
-        </li>
-        <li>
-          <img
-            class="nav-circle"
-            src="images/bg-pattern-about-1-mobile-nav-1.svg"
-            alt="visual detail - half donut with stripes"
-          />
-        </li>
-      </ul>
-      <nav class="header-container hide-item-tablet">
-        <button class="hamburger">
-          <div class="hide-item-tablet">
-            <img
-              class="menu-icon"
-              src="images/icon-hamburger.svg"
-              alt="hamburger menu icon"
-            />
+      <article class="build">
+        <img
+          src="./images/bg-pattern-home-3.svg"
+          alt="background img"
+          class="pattern-home-3"
+        />
+
+        <div class="build-wrap">
+          <div class="home-line"></div>
+          <h2>
+            <span class="hline">Build &</span>
+            <span class="hline">manage</span>
+            <span class="hline">distributed</span>
+            <span class="hline">teams like no</span>
+            <span class="hline">one else.</span>
+          </h2>
+
+          <div class="build-icon">
+            <img src="./images/icon-person.svg" alt="icon-person" />
+            <div>
+              <h3>Experienced Individuals</h3>
+              <p class="body-small">
+                Our network is made up highly experienced professionals who are
+                passionate about what they do.
+              </p>
+            </div>
           </div>
-          <img
-            class="close-icon"
-            src="images/icon-close.svg"
-            alt="menu close icon"
-          />
-        </button>
-      </nav>
-    </header>
+
 
     <!-- Find the best talent (hero) -->
     <section
@@ -124,30 +157,32 @@
           </h1>
         </div>
 
-        <div class="find-talent-text">
-          <div class="green-line"></div>
-          <p class="find-talent-lead body-small">
-            Finding the right people and building high performing teams can be
-            hard. Most companies aren’t tapping into the abundance of global
-            talent. We’re about to change that.
-          </p>
+          <div class="build-icon">
+            <img src="./images/icon-cog.svg" alt="icon-cog" />
+
+
+            <div>
+              <h3>Easy to Implement</h3>
+              <p class="body-small">
+                Our processes have been refined over years of implementation
+                meaning our teams always deliver.
+              </p>
+            </div>
+          </div>
+
+          <div class="build-icon">
+            <img src="./images/icon-chart.svg" alt="icon-chart" />
+            <div>
+              <h3>Enchanced Productivity</h3>
+              <p class="body-small">
+                Our customized platform with in-built analytics helps you manage
+                your distributed teams.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <img
-        class="find-talent-bg"
-        src="images/bg-pattern-home-2.svg"
-        alt="background pattern image for find talent section"
-        aria-hidden="true"
-      />
-      <img
-        class="find-talent-bg2"
-        src="images/bg-pattern-home-1.svg"
-        alt="background pattern image for find talent section"
-      />
-    </section>
+        <!-- /build-wrap-->
+      </article>
 
     <!-- Build & Manage -->
 
@@ -223,169 +258,151 @@
         src="images/bg-pattern-home-4-about-3.svg"
         alt=""
       />
-
-      <div class="results-inner">
-        <h2 class="results-title ocupy-all-3-col">
-          Delivering real results for top companies. Some of our
-          <span class="inline-color-change-blue">success stories.</span>
-        </h2>
-
-        <!-- 1) Kady -->
-        <div class="results-item grid-col-1">
-          <img
-            class="results-quotes"
-            src="images/icon-quotes.svg"
-            alt=""
-          />
-          <p class="results-quote">
-            “The team perfectly fit the specialized skill set required. They
-            focused on the most essential features helping us launch the
-            platform eight months faster than planned.”
-          </p>
-          <p class="results-name">Kady Baker</p>
-          <p class="results-role">Product Manager at Bookmark</p>
-          <img
-            class="results-avatar row-3-col-1"
-            src="images/avatar-kady.jpg"
-            alt="Kady Baker"
-          />
-        </div>
-
-        <!-- 2) Aiysha -->
-        <div class="results-item grid-col-2">
-          <img
-            class="results-quotes"
-            src="images/icon-quotes.svg"
-            alt=""
-          />
-          <p class="results-quote">
-            “We needed to automate our entire onboarding process. The team came
-            in and built out the whole journey. Since going live, user retention
-            has gone through the roof!”
-          </p>
-          <p class="results-name">Aiysha Reese</p>
-          <p class="results-role">Founder of Manage</p>
-          <img
-            class="results-avatar row-3-col-2"
-            src="images/avatar-aiysha.jpg"
-            alt="Aiysha Reese"
-          />
-        </div>
-
-        <!-- 3) Arthur -->
-        <div class="results-item grid-col-3">
-          <img
-            class="results-quotes"
-            src="images/icon-quotes.svg"
-            alt=""
-          />
-          <p class="results-quote">
-            “Amazing. Our team helped us build an app that delivered a new
-            experience for hiring a physio. The launch was an instant success
-            with 100k downloads in the first month.”
-          </p>
-          <p class="results-name">Arthur Clarke</p>
-          <p class="results-role">Co-founder of MyPhysio</p>
-          <img
-            class="results-avatar row-3-col-3"
-            src="images/avatar-arthur.jpg"
-            alt="Arthur Clarke"
-          />
-        </div>
-      </div>
-
-      <!-- BOTTOM-RIGHT pattern -->
-      <img
-        class="results-bg-bottom"
-        src="images/bg-pattern-home-5.svg"
-        alt=""
-      />
-    </section>
-
-    <article class="mobile-ready-started-container">
-      <!--READY TO GET STARTED-->
-      <div class="get-started-grid-container">
-        <h2 class="get-started-title">Ready to get started?</h2>
-        <a href="contact.html">
-          <button
-            class="secondary-light mobile-ready-start-button"
-            type="button"
-            alt="contact button"
-          >
-            contact
-          </button>
-        </a>
-      </div>
-      <p>
+    <!-- ZVH-22: Delivering real results (MOBILE) -->
+      <section class="delivering-results">
         <img
-          src="./images/bg-pattern-home-6-about-5.svg"
-          alt="background img"
-          class="mobile-ready-start-backgr-img"
+          class="results-bg-top"
+          src="images/bg-pattern-home-4-about-3.svg"
+          alt=""
         />
-      </p>
-    </article>
-    <footer class="mobile-footer-container desktop-footer tablet-footer">
-      <div>
-        <br />
-        <h2 class="footer-logo">myteam</h2>
-        <p
-          style="word-spacing: 20px"
-          class="body-large footer-nav"
-        >
-          <br />
-          <a
-            class="mobile-footer-link body-large"
-            href="index.html"
-            >home</a
-          >
-          <a
-            class="mobile-footer-link body-large"
-            href="about.html"
-            >about</a
-          >
+
+        <div class="results-inner">
+          <h2 class="results-title ocupy-all-3-col">
+            Delivering real results for top companies. Some of our
+            <span class="inline-color-change-blue">success stories.</span>
+          </h2>
+
+          <!-- 1) Kady -->
+          <div class="results-item grid-col-1">
+            <img class="results-quotes" src="images/icon-quotes.svg" alt="" />
+            <p class="results-quote">
+              “The team perfectly fit the specialized skill set required. They
+              focused on the most essential features helping us launch the
+              platform eight months faster than planned.”
+            </p>
+            <p class="results-name">Kady Baker</p>
+            <p class="results-role">Product Manager at Bookmark</p>
+            <img
+              class="results-avatar row-3-col-1"
+              src="images/avatar-kady.jpg"
+              alt="Kady Baker"
+            />
+          </div>
+
+          <!-- 2) Aiysha -->
+          <div class="results-item grid-col-2">
+            <img class="results-quotes" src="images/icon-quotes.svg" alt="" />
+            <p class="results-quote">
+              “We needed to automate our entire onboarding process. The team
+              came in and built out the whole journey. Since going live, user
+              retention has gone through the roof!”
+            </p>
+            <p class="results-name">Aiysha Reese</p>
+            <p class="results-role">Founder of Manage</p>
+            <img
+              class="results-avatar row-3-col-2"
+              src="images/avatar-aiysha.jpg"
+              alt="Aiysha Reese"
+            />
+          </div>
+
+          <!-- 3) Arthur -->
+          <div class="results-item grid-col-3">
+            <img class="results-quotes" src="images/icon-quotes.svg" alt="" />
+            <p class="results-quote">
+              “Amazing. Our team helped us build an app that delivered a new
+              experience for hiring a physio. The launch was an instant success
+              with 100k downloads in the first month.”
+            </p>
+            <p class="results-name">Arthur Clarke</p>
+            <p class="results-role">Co-founder of MyPhysio</p>
+            <img
+              class="results-avatar row-3-col-3"
+              src="images/avatar-arthur.jpg"
+              alt="Arthur Clarke"
+            />
+          </div>
+        </div>
+
+
+        <!-- BOTTOM-RIGHT pattern -->
+        <img
+          class="results-bg-bottom"
+          src="images/bg-pattern-home-5.svg"
+          alt=""
+        />
+      </section>
+
+      <article class="mobile-ready-started-container">
+        <!--READY TO GET STARTED-->
+        <div class="get-started-grid-container">
+          <h2 class="get-started-title">Ready to get started?</h2>
+          <a href="contact.html">
+            <button
+              class="secondary-light mobile-ready-start-button"
+              type="button"
+              alt="contact button"
+            >
+              contact
+            </button>
+          </a>
+        </div>
+        <p>
+          <img
+            src="./images/bg-pattern-home-6-about-5.svg"
+            alt="background img"
+            class="mobile-ready-start-backgr-img"
+          />
         </p>
-        <br />
-      </div>
-      <div class="body-small mobile-footer-grey-text address">
-        <p>987 Hillcrest Lane</p>
-        <p>Irvine, CA</p>
-        <p>California 92714</p>
-        <p>Call Us:949-833-7432</p>
-        <br />
-      </div>
-      <div class="footer-social">
-        <div class="social-icons">
-          <p>
-            <a
-              href="https://facebook.com/"
-              target="_blank"
-              aria-label="Facebook"
-              class="mobile-footer-icons"
-            >
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a
-              href="https://pinterest.com/"
-              target="_blank"
-              aria-label="Pinterest"
-              class="mobile-footer-icons"
-            >
-              <i class="fa-brands fa-pinterest"></i>
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              aria-label="Twitter"
-              class="mobile-footer-icons"
-            >
-              <i class="fa-brands fa-twitter"></i>
-            </a>
+      </article>
+      <footer class="footer-container">
+        <div>
+          <h2 class="footer-logo">myteam</h2>
+          <p class="body-large footer-nav">
+            <a class="mobile-footer-link body-large" href="index.html">home</a>
+            <a class="mobile-footer-link body-large" href="about.html">about</a>
           </p>
         </div>
-      </div>
-      <p class="body-small mobile-footer-grey-text copyright">
-        Copyright 2020. All Rights Reserved.
-      </p>
-    </footer>
+        <div class="body-small mobile-footer-grey-text address">
+          <p>987 Hillcrest Lane</p>
+          <p>Irvine, CA</p>
+          <p>California 92714</p>
+          <p>Call Us: 949-833-7432</p>
+        </div>
+        <div class="footer-social">
+          <div class="social-icons">
+            <p>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                aria-label="Facebook"
+                class="mobile-footer-icons"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://pinterest.com/"
+                target="_blank"
+                aria-label="Pinterest"
+                class="mobile-footer-icons"
+              >
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                aria-label="Twitter"
+                class="mobile-footer-icons"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <p class="body-small mobile-footer-grey-text copyright">
+          Copyright 2020. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
