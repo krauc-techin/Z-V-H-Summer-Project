@@ -117,17 +117,17 @@ body {
 .form-textarea:focus:valid {
   border-bottom-color: var(--form-line-active);
 }
-article {
+.contact-information, .contact-information {
   position: relative;
   background-color: var(--primarygreen);
   padding: 2rem;
   z-index: 1;
 }
-h1.large {
+.large {
   text-align: center;
   color: var(--primarywhite);
 }
-article h2 {
+.ask-about-us {
   color: var(--primarycoral);
   text-align: center;
   padding-bottom: 2rem;
@@ -200,7 +200,7 @@ article h2 {
   }
 }
 @media (min-width: 768px) {
-  article {
+  .contact-information, .contact-form {
     padding-left: 8rem;
     padding-right: 8rem;
   }
