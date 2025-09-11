@@ -339,9 +339,6 @@ a.primary-light.menu-item {
   .hide-logo-mobile {
     display: none;
   }
-  header {
-    padding: 2rem 2rem;
-  }
 
   /* Footer */
 
@@ -401,6 +398,8 @@ a.primary-light.menu-item {
     margin: 0 auto;
     width: 80%;
   }
+
+  
 
   /* Footer */
   

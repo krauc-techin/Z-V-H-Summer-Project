@@ -411,11 +411,15 @@ article {
   .logo-largest {
     max-width: 6rem;
   }
-
+  
   /* Ready to get started */
 
   .get-started-grid-container {
     grid-template-columns: 3fr 1fr;
+  }
+
+  .get-started-title {
+    font-size: 3rem;
   }
 
   .mobile-ready-started-container {
